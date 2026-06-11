@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+    /* Estilos generales */
+    body { 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        background: #f4f4f9; 
+        padding: 20px; 
+        color: #333; 
+    }
+    .container { 
+        max-width: 600px; 
+        margin: auto; 
+        background: #ffffff; 
+        padding: 30px; 
+        border-radius: 20px; 
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+        border-top: 8px solid #7eecda; /* Verde agua */
+    }
+    
+    /* Cabecera con imagen */
+    .header { text-align: center; margin-bottom: 25px; }
+    .header img { width: 100px; height: 100px; border-radius: 50%; border: 3px solid #7eecda; object-fit: cover; }
+    h1 { color: #2b3d91; font-size: 26px; margin-top: 15px; text-transform: uppercase; }
+
+
+    /* Lista desplazable */
+    .scroll-list { 
+        height: 450px; 
+        overflow-y: auto; 
+        background: #f9f9f9; 
+        padding: 15px; 
+        border-radius: 10px; 
+        border: 1px solid #eee;
+    }
+    .scroll-list::-webkit-scrollbar { width: 6px; }
+    .scroll-list::-webkit-scrollbar-thumb { background: #7eecda; border-radius: 10px; }
+    
+    /* Items */
+    .item { padding: 8px 0; border-bottom: 1px solid #e0e0e0; display: flex; align-items: baseline; }
+    .num { color: #7eecda; font-weight: bold; margin-right: 12px; width: 45px; font-size: 0.9em; }
+    .lang { font-weight: 700; color: #2b3d91; margin-right: 10px; min-width: 100px; }
+    .phrase { color: #000; font-style: italic; }
+
+
+    /* Pie de página */
+    .footer { text-align: center; margin-top: 20px; font-size: 14px; color: #666; font-style: italic; }
+</style>
+
+
+
+
+<div class="container">
+    <div class="header">
+        <img src="Imagen1.jpg" alt="Icono">
+        <h1>1000 Formas De Decir "Te Amo"
+    </div>
+<div id="resultado" style="margin-top:20px; font-size:1.2em; color:#2b3d91;"></div>
+    
+    <div class="scroll-list">
+        <!-- Tus 1000 items irán aquí -->
+<div class="item"><span class="num">61.</span> <span class="lang">Croata:</span> <span class="phrase">Volim te</span></div>
+<div class="item"><span class="num">62.</span> <span class="lang">Eslovaco:</span> <span class="phrase">Milujem ťa</span></div>
+<div class="item"><span class="num">63.</span> <span class="lang">Esloveno:</span> <span class="phrase">Ljubim te</span></div>
+<div class="item"><span class="num">64.</span> <span class="lang">Estonio:</span> <span class="phrase">Ma armastan sind</span></div>
+<div class="item"><span class="num">65.</span> <span class="lang">Feroés:</span> <span class="phrase">Eg elski teg</span></div>
+<div class="item"><span class="num">66.</span> <span class="lang">Gaélico Escocés:</span> <span class="phrase">Tha gaol agam ort</span></div>
+<div class="item"><span class="num">67.</span> <span class="lang">Galés:</span> <span class="phrase">Rwy'n dy garu di</span></div>
+<div class="item"><span class="num">68.</span> <span class="lang">Georgiano:</span> <span class="phrase">Me shen miqvarxar</span></div>
+<div class="item"><span class="num">69.</span> <span class="lang">Gujarati:</span> <span class="phrase">Hu tane prem karun chu</span></div>
+<div class="item"><span class="num">70.</span> <span class="lang">Hausa:</span> <span class="phrase">Ina son ki</span></div>
+<div class="item"><span class="num">71.</span> <span class="lang">Hmong:</span> <span class="phrase">Kuv hlub koj</span></div>
+<div class="item"><span class="num">72.</span> <span class="lang">Igbo:</span> <span class="phrase">A hụrụ m gị n'anya</span></div>
+<div class="item"><span class="num">73.</span> <span class="lang">Irlandés:</span> <span class="phrase">Taim i' ngra leat</span></div>
+<div class="item"><span class="num">74.</span> <span class="lang">Kazajo:</span> <span class="phrase">Men seni jaksı köremin</span></div>
+<div class="item"><span class="num">75.</span> <span class="lang">Kinyarwanda:</span> <span class="phrase">Ndagukunda</span></div>
+<div class="item"><span class="num">76.</span> <span class="lang">Kirguís:</span> <span class="phrase">Men seni süyöm</span></div>
+<div class="item"><span class="num">77.</span> <span class="lang">Kurdo:</span> <span class="phrase">Ez te hezdikim</span></div>
+<div class="item"><span class="num">78.</span> <span class="lang">Laosiano:</span> <span class="phrase">Khoi hak jao</span></div>
+<div class="item"><span class="num">79.</span> <span class="lang">Letón:</span> <span class="phrase">Es tevi mīlu</span></div>
+<div class="item"><span class="num">80.</span> <span class="lang">Lituano:</span> <span class="phrase">Aš tave myliu</span></div>
+<div class="item"><span class="num">81.</span> <span class="lang">Luxemburgués:</span> <span class="phrase">Ech hun dech gär</span></div>
+<div class="item"><span class="num">82.</span> <span class="lang">Macedonio:</span> <span class="phrase">Te sakam</span></div>
+<div class="item"><span class="num">83.</span> <span class="lang">Malayo:</span> <span class="phrase">Saya cintakan mu</span></div>
+<div class="item"><span class="num">84.</span> <span class="lang">Malayalam:</span> <span class="phrase">Njan ninne premikkunnu</span></div>
+<div class="item"><span class="num">85.</span> <span class="lang">Maltés:</span> <span class="phrase">Inħobbok</span></div>
+<div class="item"><span class="num">86.</span> <span class="lang">Marathi:</span> <span class="phrase">Mi tujhya var prem karato</span></div>
+<div class="item"><span class="num">87.</span> <span class="lang">Mongol:</span> <span class="phrase">Bi chamd khairtai</span></div>
+<div class="item"><span class="num">88.</span> <span class="lang">Nepalí:</span> <span class="phrase">Ma timilai maya garchhu</span></div>
+<div class="item"><span class="num">89.</span> <span class="lang">Oriya:</span> <span class="phrase">Mun tumaku bhala pae</span></div>
+<div class="item"><span class="num">90.</span> <span class="lang">Pashto:</span> <span class="phrase">Za sta sara meena kawom</span></div>
+<div class="item"><span class="num">91.</span> <span class="lang">Punjabi:</span> <span class="phrase">Main tainu pyar karda haan</span></div>
+<div class="item"><span class="num">92.</span> <span class="lang">Quechua (Cusco):</span> <span class="phrase">Munayki</span></div>
+<div class="item"><span class="num">93.</span> <span class="lang">Serbio:</span> <span class="phrase">Volim te</span></div>
+<div class="item"><span class="num">94.</span> <span class="lang">Somalí:</span> <span class="phrase">Waan ku jecelahay</span></div>
+<div class="item"><span class="num">95.</span> <span class="lang">Sotho:</span> <span class="phrase">Ke a go rata</span></div>
+<div class="item"><span class="num">96.</span> <span class="lang">Tamil:</span> <span class="phrase">Naan unnai kathalikiren</span></div>
+<div class="item"><span class="num">97.</span> <span class="lang">Telugu:</span> <span class="phrase">Nenu ninnu premistunnanu</span></div>
+<div class="item"><span class="num">98.</span> <span class="lang">Tigriña:</span> <span class="phrase">Yewedeleki</span></div>
+<div class="item"><span class="num">99.</span> <span class="lang">Urdú:</span> <span class="phrase">Mujhe tumse mohabbat hai</span></div>
+<div class="item"><span class="num">100.</span> <span class="lang">Uzbeko:</span> <span class="phrase">Men seni sevaman</span></div>
+<div class="item"><span class="num">101.</span> <span class="lang">Yiddish:</span> <span class="phrase">Ich libe dich</span></div>
+<div class="item"><span class="num">102.</span> <span class="lang">Wólof:</span> <span class="phrase">Dama la nob</span></div>
+<div class="item"><span class="num">103.</span> <span class="lang">Tibetano:</span> <span class="phrase">Nga rang la ga po yö</span></div>
+<div class="item"><span class="num">104.</span> <span class="lang">Akan (Twi):</span> <span class="phrase">Me do wo</span></div>
+<div class="item"><span class="num">105.</span> <span class="lang">Amárico:</span> <span class="phrase">Ewedihalehu</span></div>
+<div class="item"><span class="num">106.</span> <span class="lang">Aragonés:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">107.</span> <span class="lang">Asturiano:</span> <span class="phrase">Quiérote</span></div>
+<div class="item"><span class="num">108.</span> <span class="lang">Bambara:</span> <span class="phrase">M'bi fe</span></div>
+<div class="item"><span class="num">109.</span> <span class="lang">Basco (Euskera):</span> <span class="phrase">Maite zaitut</span></div>
+<div class="item"><span class="num">110.</span> <span class="lang">Bislama:</span> <span class="phrase">Mi lavem yu</span></div>
+<div class="item"><span class="num">111.</span> <span class="lang">Bretón:</span> <span class="phrase">Karout a ran ac'hanout</span></div>
+<div class="item"><span class="num">112.</span> <span class="lang">Chamorro:</span> <span class="phrase">Hu guiay hao</span></div>
+<div class="item"><span class="num">113.</span> <span class="lang">Checheno:</span> <span class="phrase">Hjo vezash du</span></div>
+<div class="item"><span class="num">114.</span> <span class="lang">Chichewa:</span> <span class="phrase">Ndimakukonda</span></div>
+<div class="item"><span class="num">115.</span> <span class="lang">Chino (Hakka):</span> <span class="phrase">Ngai oi ngi</span></div>
+<div class="item"><span class="num">116.</span> <span class="lang">Chino (Wu):</span> <span class="phrase">Nga nong nong</span></div>
+<div class="item"><span class="num">117.</span> <span class="lang">Chuukese:</span> <span class="phrase">Ua angangúkem</span></div>
+<div class="item"><span class="num">118.</span> <span class="lang">Cree:</span> <span class="phrase">Kisakihitin</span></div>
+<div class="item"><span class="num">119.</span> <span class="lang">Crimeo-tártaro:</span> <span class="phrase">Seni sevem</span></div>
+<div class="item"><span class="num">120.</span> <span class="lang">Dari:</span> <span class="phrase">Doostat daram</span></div>
+<div class="item"><span class="num">121.</span> <span class="lang">Dhivehi:</span> <span class="phrase">Aharen kalaa dheke loabi vamey</span></div>
+<div class="item"><span class="num">122.</span> <span class="lang">Dyula:</span> <span class="phrase">N'bi fe</span></div>
+<div class="item"><span class="num">123.</span> <span class="lang">Erzya:</span> <span class="phrase">Mon ton vechkan</span></div>
+<div class="item"><span class="num">124.</span> <span class="lang">Fiyiano:</span> <span class="phrase">Au domoni iko</span></div>
+<div class="item"><span class="num">125.</span> <span class="lang">Frisón:</span> <span class="phrase">Ik hâld fan dy</span></div>
+<div class="item"><span class="num">126.</span> <span class="lang">Fula:</span> <span class="phrase">Mi yid ma</span></div>
+<div class="item"><span class="num">127.</span> <span class="lang">Ga:</span> <span class="phrase">Mi suɔɔo bo</span></div>
+<div class="item"><span class="num">128.</span> <span class="lang">Gagauzo:</span> <span class="phrase">Bän seni seveerim</span></div>
+<div class="item"><span class="num">129.</span> <span class="lang">Gallego:</span> <span class="phrase">Ámote</span></div>
+<div class="item"><span class="num">130.</span> <span class="lang">Groenlandés:</span> <span class="phrase">Asavakit</span></div>
+<div class="item"><span class="num">131.</span> <span class="lang">Guaraní:</span> <span class="phrase">Rohayhu</span></div>
+<div class="item"><span class="num">132.</span> <span class="lang">Hiligaynon:</span> <span class="phrase">Palangga ko ikaw</span></div>
+<div class="item"><span class="num">133.</span> <span class="lang">Iloko:</span> <span class="phrase">Ay-ayatenka</span></div>
+<div class="item"><span class="num">134.</span> <span class="lang">Inupiak:</span> <span class="phrase">Piqpagit</span></div>
+<div class="item"><span class="num">135.</span> <span class="lang">Javanés:</span> <span class="phrase">Aku tresno marang sliramu</span></div>
+<div class="item"><span class="num">136.</span> <span class="lang">Kabardiano:</span> <span class="phrase">Sэ wэsogol</span></div>
+<div class="item"><span class="num">137.</span> <span class="lang">Kashmiri:</span> <span class="phrase">Me chu chui myaas</span></div>
+<div class="item"><span class="num">138.</span> <span class="lang">Khmer:</span> <span class="phrase">Knhom srolanh neak</span></div>
+<div class="item"><span class="num">139.</span> <span class="lang">Komi:</span> <span class="phrase">Me rádeitan téne</span></div>
+<div class="item"><span class="num">140.</span> <span class="lang">Konkani:</span> <span class="phrase">Hav tuzo mog korta</span></div>
+<div class="item"><span class="num">141.</span> <span class="lang">Ladino:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">142.</span> <span class="lang">Lingala:</span> <span class="phrase">Nalingi yo</span></div>
+<div class="item"><span class="num">143.</span> <span class="lang">Luganda:</span> <span class="phrase">Nkwagala</span></div>
+<div class="item"><span class="num">144.</span> <span class="lang">Madurese:</span> <span class="phrase">Abhelas senga' dika</span></div>
+<div class="item"><span class="num">145.</span> <span class="lang">Malgache:</span> <span class="phrase">Tiako ianao</span></div>
+<div class="item"><span class="num">146.</span> <span class="lang">Manés:</span> <span class="phrase">Ta graih aym ort</span></div>
+<div class="item"><span class="num">147.</span> <span class="lang">Manipuri:</span> <span class="phrase">Ei nangbu nungshi</span></div>
+<div class="item"><span class="num">148.</span> <span class="lang">Maorí:</span> <span class="phrase">Kei te aroha au ki a koe</span></div>
+<div class="item"><span class="num">149.</span> <span class="lang">Mari:</span> <span class="phrase">Myj tyjym jöratem</span></div>
+<div class="item"><span class="num">150.</span> <span class="lang">Marshallés:</span> <span class="phrase">Iakwe eok</span></div>
+<div class="item"><span class="num">151.</span> <span class="lang">Masai:</span> <span class="phrase">Aiyoo nidim</span></div>
+<div class="item"><span class="num">152.</span> <span class="lang">Maya (K'iche'):</span> <span class="phrase">Natinemaj ri at</span></div>
+<div class="item"><span class="num">153.</span> <span class="lang">Mende:</span> <span class="phrase">Nya bi nya</span></div>
+<div class="item"><span class="num">154.</span> <span class="lang">Minangkabau:</span> <span class="phrase">Ambo cinto kasadonyo</span></div>
+<div class="item"><span class="num">155.</span> <span class="lang">Mohawk:</span> <span class="phrase">Konoronhkwa</span></div>
+<div class="item"><span class="num">156.</span> <span class="lang">Mordvino:</span> <span class="phrase">Mon ton vechkan</span></div>
+<div class="item"><span class="num">157.</span> <span class="lang">Ndebele:</span> <span class="phrase">Ngiyakuthanda</span></div>
+<div class="item"><span class="num">158.</span> <span class="lang">Nenets:</span> <span class="phrase">Man siid' taryena</span></div>
+<div class="item"><span class="num">159.</span> <span class="lang">Oromo:</span> <span class="phrase">Sin jaalladha</span></div>
+<div class="item"><span class="num">160.</span> <span class="lang">Ossetio:</span> <span class="phrase">Æз уарзын дæ</span></div>
+<div class="item"><span class="num">161.</span> <span class="lang">Papiamento:</span> <span class="phrase">Mi ta stima bo</span></div>
+<div class="item"><span class="num">162.</span> <span class="lang">Persa (Farsi):</span> <span class="phrase">Doostat daram</span></div>
+<div class="item"><span class="num">163.</span> <span class="lang">Piemontés:</span> <span class="phrase">I t'am</span></div>
+<div class="item"><span class="num">164.</span> <span class="lang">Polaco:</span> <span class="phrase">Kocham cię</span></div>
+<div class="item"><span class="num">165.</span> <span class="lang">Pooni:</span> <span class="phrase">Mi a lav yu</span></div>
+<div class="item"><span class="num">166.</span> <span class="lang">Provenzal:</span> <span class="phrase">T'aimi</span></div>
+<div class="item"><span class="num">167.</span> <span class="lang">Rético:</span> <span class="phrase">Jeu te ama</span></div>
+<div class="item"><span class="num">168.</span> <span class="lang">Romaní:</span> <span class="phrase">Kamav tut</span></div>
+<div class="item"><span class="num">169.</span> <span class="lang">Rotokas:</span> <span class="phrase">Ie tu uvu</span></div>
+<div class="item"><span class="num">170.</span> <span class="lang">Rundi:</span> <span class="phrase">Ndagukunda</span></div>
+<div class="item"><span class="num">171.</span> <span class="lang">Sami (Norte):</span> <span class="phrase">Mun ráhkistan du</span></div>
+<div class="item"><span class="num">172.</span> <span class="lang">Samoano:</span> <span class="phrase">Ou te alofa ia te oe</span></div>
+<div class="item"><span class="num">173.</span> <span class="lang">Sango:</span> <span class="phrase">Mbi yé mo</span></div>
+<div class="item"><span class="num">174.</span> <span class="lang">Sardo:</span> <span class="phrase">T'amo</span></div>
+<div class="item"><span class="num">175.</span> <span class="lang">Serbocroata:</span> <span class="phrase">Volim te</span></div>
+<div class="item"><span class="num">176.</span> <span class="lang">Shona:</span> <span class="phrase">Ndinokuda</span></div>
+<div class="item"><span class="num">177.</span> <span class="lang">Siciliano:</span> <span class="phrase">T'amu</span></div>
+<div class="item"><span class="num">178.</span> <span class="lang">Sindhi:</span> <span class="phrase">Munhjo dil tawan te ahe</span></div>
+<div class="item"><span class="num">179.</span> <span class="lang">Sundanés:</span> <span class="phrase">Abdi bogoh ka anjeun</span></div>
+<div class="item"><span class="num">180.</span> <span class="lang">Suazi:</span> <span class="phrase">Ngiyakutsandza</span></div>
+<div class="item"><span class="num">181.</span> <span class="lang">Syriaco:</span> <span class="phrase">Ahbak</span></div>
+<div class="item"><span class="num">182.</span> <span class="lang">Tagalo:</span> <span class="phrase">Mahal kita</span></div>
+<div class="item"><span class="num">183.</span> <span class="lang">Tahitiano:</span> <span class="phrase">Ua here vau ia oe</span></div>
+<div class="item"><span class="num">184.</span> <span class="lang">Tajiko:</span> <span class="phrase">Man turo dūst medoram</span></div>
+<div class="item"><span class="num">185.</span> <span class="lang">Tártaro:</span> <span class="phrase">Min sine yaratam</span></div>
+<div class="item"><span class="num">186.</span> <span class="lang">Tetum:</span> <span class="phrase">Hau hadomi o</span></div>
+<div class="item"><span class="num">187.</span> <span class="lang">Tiv:</span> <span class="phrase">M soo u</span></div>
+<div class="item"><span class="num">188.</span> <span class="lang">Tok Pisin:</span> <span class="phrase">Mi laikim yu</span></div>
+<div class="item"><span class="num">189.</span> <span class="lang">Tonga:</span> <span class="phrase">Ndiyakuthanda</span></div>
+<div class="item"><span class="num">190.</span> <span class="lang">Tswana:</span> <span class="phrase">Ke a go rata</span></div>
+<div class="item"><span class="num">191.</span> <span class="lang">Turcomano:</span> <span class="phrase">Men seni söýýärin</span></div>
+<div class="item"><span class="num">192.</span> <span class="lang">Tuvaluano:</span> <span class="phrase">Au e alofa ia koe</span></div>
+<div class="item"><span class="num">193.</span> <span class="lang">Udmurto:</span> <span class="phrase">Mon tonne yaratyly</span></div>
+<div class="item"><span class="num">194.</span> <span class="lang">Uigur:</span> <span class="phrase">Men seni yaxshi körimen</span></div>
+<div class="item"><span class="num">195.</span> <span class="lang">Valón:</span> <span class="phrase">Dji vos inme</span></div>
+<div class="item"><span class="num">196.</span> <span class="lang">Venda:</span> <span class="phrase">Ndi a ni funa</span></div>
+<div class="item"><span class="num">197.</span> <span class="lang">Veneciano:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">198.</span> <span class="lang">Vepsio:</span> <span class="phrase">Minä armastan sind</span></div>
+<div class="item"><span class="num">199.</span> <span class="lang">Vietnamita:</span> <span class="phrase">Anh yêu em</span></div>
+<div class="item"><span class="num">200.</span> <span class="lang">Võro:</span> <span class="phrase">Ma armasta sind</span></div>
+<div class="item"><span class="num">201.</span> <span class="lang">Wolof:</span> <span class="phrase">Dama la nob</span></div>
+<div class="item"><span class="num">202.</span> <span class="lang">Xhosa:</span> <span class="phrase">Ndiyakuthanda</span></div>
+<div class="item"><span class="num">203.</span> <span class="lang">Yakuto:</span> <span class="phrase">Min èni taabïm</span></div>
+<div class="item"><span class="num">204.</span> <span class="lang">Yao:</span> <span class="phrase">N'gwe ni gwe</span></div>
+<div class="item"><span class="num">205.</span> <span class="lang">Yiddish:</span> <span class="phrase">Ikh hob dikh lib</span></div>
+<div class="item"><span class="num">206.</span> <span class="lang">Yoruba:</span> <span class="phrase">Mo nifẹẹ rẹ</span></div>
+<div class="item"><span class="num">207.</span> <span class="lang">Zazaki:</span> <span class="phrase">Ez to ra hes keno</span></div>
+<div class="item"><span class="num">208.</span> <span class="lang">Zhuang:</span> <span class="phrase">Gou gai neix</span></div>
+<div class="item"><span class="num">209.</span> <span class="lang">Zulú:</span> <span class="phrase">Ngiyakuthanda</span></div>
+<div class="item"><span class="num">210.</span> <span class="lang">Aceh:</span> <span class="phrase">Gaseh lon keu gata</span></div>
+<div class="item"><span class="num">211.</span> <span class="lang">Adigués:</span> <span class="phrase">Sэ o-sogol</span></div>
+<div class="item"><span class="num">212.</span> <span class="lang">Afar:</span> <span class="phrase">Sinam kaxsa</span></div>
+<div class="item"><span class="num">213.</span> <span class="lang">Afrikaans:</span> <span class="phrase">Ek het jou lief</span></div>
+<div class="item"><span class="num">214.</span> <span class="lang">Agul:</span> <span class="phrase">Zu vu kuz-huz</span></div>
+<div class="item"><span class="num">215.</span> <span class="lang">Ainu:</span> <span class="phrase">Ku-kon-ne</span></div>
+<div class="item"><span class="num">216.</span> <span class="lang">Aleut:</span> <span class="phrase">Qanaqingam</span></div>
+<div class="item"><span class="num">217.</span> <span class="lang">Altor:</span> <span class="phrase">Mi ames te</span></div>
+<div class="item"><span class="num">218.</span> <span class="lang">Angika:</span> <span class="phrase">Hum tose prem kare</span></div>
+<div class="item"><span class="num">219.</span> <span class="lang">Apache:</span> <span class="phrase">Shi-ni-go</span></div>
+<div class="item"><span class="num">220.</span> <span class="lang">Arapaho:</span> <span class="phrase">He-no-ne-ce</span></div>
+<div class="item"><span class="num">221.</span> <span class="lang">Assamés:</span> <span class="phrase">Moi tomak bhal pao</span></div>
+<div class="item"><span class="num">222.</span> <span class="lang">Awadhi:</span> <span class="phrase">Ham tose piare</span></div>
+<div class="item"><span class="num">223.</span> <span class="lang">Balinés:</span> <span class="phrase">Tiang tresna ken beli</span></div>
+<div class="item"><span class="num">224.</span> <span class="lang">Banjari:</span> <span class="phrase">Ulun katuju lawan pian</span></div>
+<div class="item"><span class="num">225.</span> <span class="lang">Bashkir:</span> <span class="phrase">Min hine yaratam</span></div>
+<div class="item"><span class="num">226.</span> <span class="lang">Batak Toba:</span> <span class="phrase">Holong rohangku di ho</span></div>
+<div class="item"><span class="num">227.</span> <span class="lang">Beli:</span> <span class="phrase">Mi amoy te</span></div>
+<div class="item"><span class="num">228.</span> <span class="lang">Bhojpuri:</span> <span class="phrase">Hum tohse pyar karila</span></div>
+<div class="item"><span class="num">229.</span> <span class="lang">Bikol:</span> <span class="phrase">Namumutan ta ka</span></div>
+<div class="item"><span class="num">230.</span> <span class="lang">Blackfoot:</span> <span class="phrase">Nitsíikopowa</span></div>
+<div class="item"><span class="num">231.</span> <span class="lang">Bodo:</span> <span class="phrase">Ang ninjang unnai</span></div>
+<div class="item"><span class="num">232.</span> <span class="lang">Buginés:</span> <span class="phrase">Uppa' ri idi</span></div>
+<div class="item"><span class="num">233.</span> <span class="lang">Bulgari:</span> <span class="phrase">Obicham te</span></div>
+<div class="item"><span class="num">234.</span> <span class="lang">Bundeli:</span> <span class="phrase">Hum tum se prem karat</span></div>
+<div class="item"><span class="num">235.</span> <span class="lang">Buriat:</span> <span class="phrase">Bi chamdag durtai</span></div>
+<div class="item"><span class="num">236.</span> <span class="lang">Cajún:</span> <span class="phrase">Je t'aime</span></div>
+<div class="item"><span class="num">237.</span> <span class="lang">Cebuano:</span> <span class="phrase">Gihigugma ikaw</span></div>
+<div class="item"><span class="num">238.</span> <span class="lang">Chakma:</span> <span class="phrase">Ami tomak bhalobashi</span></div>
+<div class="item"><span class="num">239.</span> <span class="lang">Cherokee:</span> <span class="phrase">Gvgeyu</span></div>
+<div class="item"><span class="num">240.</span> <span class="lang">Chipewyan:</span> <span class="phrase">Nuh-tsu</span></div>
+<div class="item"><span class="num">241.</span> <span class="lang">Chokwe:</span> <span class="phrase">Ami nakuzola</span></div>
+<div class="item"><span class="num">242.</span> <span class="lang">Cornish:</span> <span class="phrase">My a'th kar</span></div>
+<div class="item"><span class="num">243.</span> <span class="lang">Dargin:</span> <span class="phrase">Nu hu waz-huz</span></div>
+<div class="item"><span class="num">244.</span> <span class="lang">Dogri:</span> <span class="phrase">Main tainu pyar kardi</span></div>
+<div class="item"><span class="num">245.</span> <span class="lang">Dungan:</span> <span class="phrase">Vo ni ai</span></div>
+<div class="item"><span class="num">246.</span> <span class="lang">Dzongkha:</span> <span class="phrase">Nga gi choe lu ga</span></div>
+<div class="item"><span class="num">247.</span> <span class="lang">Efik:</span> <span class="phrase">Mma mma fo</span></div>
+<div class="item"><span class="num">248.</span> <span class="lang">Ekajuk:</span> <span class="phrase">N'gho ni</span></div>
+<div class="item"><span class="num">249.</span> <span class="lang">Evenki:</span> <span class="phrase">Bi siive eevie</span></div>
+<div class="item"><span class="num">250.</span> <span class="lang">Ewe:</span> <span class="phrase">Me lɔ̃ wò</span></div>
+<div class="item"><span class="num">251.</span> <span class="lang">Fang:</span> <span class="phrase">Me ne ve wo</span></div>
+<div class="item"><span class="num">252.</span> <span class="lang">Fon:</span> <span class="phrase">Un yɔn wè</span></div>
+<div class="item"><span class="num">253.</span> <span class="lang">Friulano:</span> <span class="phrase">Ti uli</span></div>
+<div class="item"><span class="num">254.</span> <span class="lang">Garhwali:</span> <span class="phrase">Hum tumse pyar karat</span></div>
+<div class="item"><span class="num">255.</span> <span class="lang">Gayo:</span> <span class="phrase">Aku sayang kene</span></div>
+<div class="item"><span class="num">256.</span> <span class="lang">Gbe:</span> <span class="phrase">Nyé lɔn wò</span></div>
+<div class="item"><span class="num">257.</span> <span class="lang">Gondi:</span> <span class="phrase">Nanna ninnu preetikonta</span></div>
+<div class="item"><span class="num">258.</span> <span class="lang">Groningués:</span> <span class="phrase">Ik hou van die</span></div>
+<div class="item"><span class="num">259.</span> <span class="lang">Gusii:</span> <span class="phrase">Nakwenda</span></div>
+<div class="item"><span class="num">260.</span> <span class="lang">Haryanvi:</span> <span class="phrase">Main tane pyar karu</span></div>
+<div class="item"><span class="num">261.</span> <span class="lang">Himachali:</span> <span class="phrase">Main tuse pyar karda</span></div>
+<div class="item"><span class="num">262.</span> <span class="lang">Hiri Motu:</span> <span class="phrase">Lalokau egu</span></div>
+<div class="item"><span class="num">263.</span> <span class="lang">Hopi:</span> <span class="phrase">Nu' umi unangwa'ta</span></div>
+<div class="item"><span class="num">264.</span> <span class="lang">Iban:</span> <span class="phrase">Aku sayau ke nuan</span></div>
+<div class="item"><span class="num">265.</span> <span class="lang">Ibibio:</span> <span class="phrase">Mma mma fo</span></div>
+<div class="item"><span class="num">266.</span> <span class="lang">Itelmeno:</span> <span class="phrase">T’in’kik</span></div>
+<div class="item"><span class="num">267.</span> <span class="lang">Judeo-español:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">268.</span> <span class="lang">Kachin:</span> <span class="phrase">Ngai nang hpe tsaw ra ai</span></div>
+<div class="item"><span class="num">269.</span> <span class="lang">Kalmyk:</span> <span class="phrase">Bi chamd durtai</span></div>
+<div class="item"><span class="num">270.</span> <span class="lang">Kamoro:</span> <span class="phrase">Nimi-ri</span></div>
+<div class="item"><span class="num">271.</span> <span class="lang">Kanuri:</span> <span class="phrase">Nda kema</span></div>
+<div class="item"><span class="num">272.</span> <span class="lang">Karachay-bálkaro:</span> <span class="phrase">Men seni süyemen</span></div>
+<div class="item"><span class="num">273.</span> <span class="lang">Karakalpak:</span> <span class="phrase">Men seni süyemen</span></div>
+<div class="item"><span class="num">274.</span> <span class="lang">Karelio:</span> <span class="phrase">Minä armastan sind</span></div>
+<div class="item"><span class="num">275.</span> <span class="lang">Ket:</span> <span class="phrase">In’ d’an’</span></div>
+<div class="item"><span class="num">276.</span> <span class="lang">Khakas:</span> <span class="phrase">Men seni süyem</span></div>
+<div class="item"><span class="num">277.</span> <span class="lang">Kongo:</span> <span class="phrase">Mono ke zola nge</span></div>
+<div class="item"><span class="num">278.</span> <span class="lang">Koptos:</span> <span class="phrase">Ai shok</span></div>
+<div class="item"><span class="num">279.</span> <span class="lang">Koryak:</span> <span class="phrase">T-in-nuk</span></div>
+<div class="item"><span class="num">280.</span> <span class="lang">Kpelle:</span> <span class="phrase">I loai</span></div>
+<div class="item"><span class="num">281.</span> <span class="lang">Krio:</span> <span class="phrase">A love yu</span></div>
+<div class="item"><span class="num">282.</span> <span class="lang">Kumyk:</span> <span class="phrase">Men seni süyemen</span></div>
+<div class="item"><span class="num">283.</span> <span class="lang">Kurdish (Sorani):</span> <span class="phrase">Xoisham dawey</span></div>
+<div class="item"><span class="num">284.</span> <span class="lang">Kurux:</span> <span class="phrase">Nan ninnu kandan</span></div>
+<div class="item"><span class="num">285.</span> <span class="lang">Kutai:</span> <span class="phrase">Aku sayang kene</span></div>
+<div class="item"><span class="num">286.</span> <span class="lang">Lak:</span> <span class="phrase">Zu vu kuz-huz</span></div>
+<div class="item"><span class="num">287.</span> <span class="lang">Lakota:</span> <span class="phrase">Techihila</span></div>
+<div class="item"><span class="num">288.</span> <span class="lang">Latgaliano:</span> <span class="phrase">Es tevi mīlu</span></div>
+<div class="item"><span class="num">289.</span> <span class="lang">Ligur:</span> <span class="phrase">Ti veuggio ben</span></div>
+<div class="item"><span class="num">290.</span> <span class="lang">Livonio:</span> <span class="phrase">Ma armastan sind</span></div>
+<div class="item"><span class="num">291.</span> <span class="lang">Lombardo:</span> <span class="phrase">Te vöri ben</span></div>
+<div class="item"><span class="num">292.</span> <span class="lang">Lunda:</span> <span class="phrase">Ninakukwila</span></div>
+<div class="item"><span class="num">293.</span> <span class="lang">Luo:</span> <span class="phrase">Aherori</span></div>
+<div class="item"><span class="num">294.</span> <span class="lang">Lusitano:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">295.</span> <span class="lang">Lutgaliano:</span> <span class="phrase">Es tevi mīlu</span></div>
+<div class="item"><span class="num">296.</span> <span class="lang">Maghiar:</span> <span class="phrase">Szeretlek</span></div>
+<div class="item"><span class="num">297.</span> <span class="lang">Makassar:</span> <span class="phrase">Kuammu-ammu</span></div>
+<div class="item"><span class="num">298.</span> <span class="lang">Maldivo:</span> <span class="phrase">Aharen kalaa dheke loabi vamey</span></div>
+<div class="item"><span class="num">299.</span> <span class="lang">Malinka:</span> <span class="phrase">M'bi fe</span></div>
+<div class="item"><span class="num">300.</span> <span class="lang">Maltés:</span> <span class="phrase">Inħobbok</span></div>
+<div class="item"><span class="num">301.</span> <span class="lang">Mambwe:</span> <span class="phrase">Naku temwa</span></div>
+<div class="item"><span class="num">302.</span> <span class="lang">Mandingo:</span> <span class="phrase">M'bi fe</span></div>
+<div class="item"><span class="num">303.</span> <span class="lang">Mansi:</span> <span class="phrase">Än ämpan</span></div>
+<div class="item"><span class="num">304.</span> <span class="lang">Mapudungun:</span> <span class="phrase">Piwkeyeyu</span></div>
+<div class="item"><span class="num">305.</span> <span class="lang">Marquesano:</span> <span class="phrase">Ua here vau ia oe</span></div>
+<div class="item"><span class="num">306.</span> <span class="lang">Masai:</span> <span class="phrase">Aiyoo nidim</span></div>
+<div class="item"><span class="num">307.</span> <span class="lang">Matlatzinca:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">308.</span> <span class="lang">Mauriciano:</span> <span class="phrase">Mo kontan twa</span></div>
+<div class="item"><span class="num">309.</span> <span class="lang">Mazateco:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">310.</span> <span class="lang">Mbundu:</span> <span class="phrase">Ngikuzola</span></div>
+<div class="item"><span class="num">311.</span> <span class="lang">Meitei:</span> <span class="phrase">Ei nangbu nungshi</span></div>
+<div class="item"><span class="num">312.</span> <span class="lang">Miskito:</span> <span class="phrase">Yang nina yamni</span></div>
+<div class="item"><span class="num">313.</span> <span class="lang">Mixteco:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">314.</span> <span class="lang">Moksha:</span> <span class="phrase">Mon ton vechkan</span></div>
+<div class="item"><span class="num">315.</span> <span class="lang">Mongo:</span> <span class="phrase">Nalingi yo</span></div>
+<div class="item"><span class="num">316.</span> <span class="lang">More:</span> <span class="phrase">Mam nongra fo</span></div>
+<div class="item"><span class="num">317.</span> <span class="lang">Mossi:</span> <span class="phrase">Mam nongra fo</span></div>
+<div class="item"><span class="num">318.</span> <span class="lang">Mvskoke:</span> <span class="phrase">Cem vtekat</span></div>
+<div class="item"><span class="num">319.</span> <span class="lang">Nahuatl:</span> <span class="phrase">Ni mits tlay tlayokoli</span></div>
+<div class="item"><span class="num">320.</span> <span class="lang">Nauruano:</span> <span class="phrase">I karubakin igo</span></div>
+<div class="item"><span class="num">321.</span> <span class="lang">Navajo:</span> <span class="phrase">Ayor anosh'ni</span></div>
+<div class="item"><span class="num">322.</span> <span class="lang">Ndebele (Sur):</span> <span class="phrase">Ngiyakuthanda</span></div>
+<div class="item"><span class="num">323.</span> <span class="lang">Ndombe:</span> <span class="phrase">Ngikuzola</span></div>
+<div class="item"><span class="num">324.</span> <span class="lang">Ngambai:</span> <span class="phrase">A yé mo</span></div>
+<div class="item"><span class="num">325.</span> <span class="lang">Nias:</span> <span class="phrase">I'ohe ndra'o</span></div>
+<div class="item"><span class="num">326.</span> <span class="lang">Nilo:</span> <span class="phrase">Aherori</span></div>
+<div class="item"><span class="num">327.</span> <span class="lang">Nisga'a:</span> <span class="phrase">N'wil aaxgw</span></div>
+<div class="item"><span class="num">328.</span> <span class="lang">Nivkh:</span> <span class="phrase">T-in-nuk</span></div>
+<div class="item"><span class="num">329.</span> <span class="lang">Nocturno:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">330.</span> <span class="lang">Nogayo:</span> <span class="phrase">Men seni süyemen</span></div>
+<div class="item"><span class="num">331.</span> <span class="lang">Noruego (Bokmål):</span> <span class="phrase">Jeg elsker deg</span></div>
+<div class="item"><span class="num">332.</span> <span class="lang">Noruego (Nynorsk):</span> <span class="phrase">Eg elskar deg</span></div>
+<div class="item"><span class="num">333.</span> <span class="lang">Nuer:</span> <span class="phrase">Nhiam ke yi</span></div>
+<div class="item"><span class="num">334.</span> <span class="lang">Nyakyusa:</span> <span class="phrase">Nikutema</span></div>
+<div class="item"><span class="num">335.</span> <span class="lang">Nyanja:</span> <span class="phrase">Ndimakukonda</span></div>
+<div class="item"><span class="num">336.</span> <span class="lang">Occitano:</span> <span class="phrase">T'aimi</span></div>
+<div class="item"><span class="num">337.</span> <span class="lang">Ojibwa:</span> <span class="phrase">Gizaagi'in</span></div>
+<div class="item"><span class="num">338.</span> <span class="lang">Okinawense:</span> <span class="phrase">Daisuki-sa</span></div>
+<div class="item"><span class="num">339.</span> <span class="lang">Oneida:</span> <span class="phrase">Konoronhkwa</span></div>
+<div class="item"><span class="num">340.</span> <span class="lang">Otomí:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">341.</span> <span class="lang">Paiute:</span> <span class="phrase">Nu umi unangwa'ta</span></div>
+<div class="item"><span class="num">342.</span> <span class="lang">Palauano:</span> <span class="phrase">Ak meralii</span></div>
+<div class="item"><span class="num">343.</span> <span class="lang">Pampango:</span> <span class="phrase">Kaluguran daka</span></div>
+<div class="item"><span class="num">344.</span> <span class="lang">Pangasinense:</span> <span class="phrase">Ay-ayatenka</span></div>
+<div class="item"><span class="num">345.</span> <span class="lang">Panjabis:</span> <span class="phrase">Main tainu pyar karda</span></div>
+<div class="item"><span class="num">346.</span> <span class="lang">Papiamentu:</span> <span class="phrase">Mi ta stima bo</span></div>
+<div class="item"><span class="num">347.</span> <span class="lang">Pashto (Afganistán):</span> <span class="phrase">Za sta sara meena kawom</span></div>
+<div class="item"><span class="num">348.</span> <span class="lang">Pedi:</span> <span class="phrase">Ke a go rata</span></div>
+<div class="item"><span class="num">349.</span> <span class="lang">Pocomchi:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">350.</span> <span class="lang">Pohnpeiano:</span> <span class="phrase">I kupwuurei</span></div>
+<div class="item"><span class="num">351.</span> <span class="lang">Polabo:</span> <span class="phrase">Kocham cię</span></div>
+<div class="item"><span class="num">352.</span> <span class="lang">Pomerano:</span> <span class="phrase">Ik hou fan dy</span></div>
+<div class="item"><span class="num">353.</span> <span class="lang">Poptí:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">354.</span> <span class="lang">Potawatomi:</span> <span class="phrase">Gisage'i</span></div>
+<div class="item"><span class="num">355.</span> <span class="lang">Pracrit:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">356.</span> <span class="lang">Pulaar:</span> <span class="phrase">Mi yid ma</span></div>
+<div class="item"><span class="num">357.</span> <span class="lang">Punjabi (Gurmukhi):</span> <span class="phrase">Main tainu pyar karda haan</span></div>
+<div class="item"><span class="num">358.</span> <span class="lang">Quechua (Bolivia):</span> <span class="phrase">Munayki</span></div>
+<div class="item"><span class="num">359.</span> <span class="lang">Quechua (Ecuador):</span> <span class="phrase">Kuyayki</span></div>
+<div class="item"><span class="num">360.</span> <span class="lang">Q'eqchi':</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">361.</span> <span class="lang">Rapa Nui:</span> <span class="phrase">Here atu ko au</span></div>
+<div class="item"><span class="num">362.</span> <span class="lang">Rarotongano:</span> <span class="phrase">Inangaro au ia koe</span></div>
+<div class="item"><span class="num">363.</span> <span class="lang">Riksmål:</span> <span class="phrase">Jeg elsker deg</span></div>
+<div class="item"><span class="num">364.</span> <span class="lang">Romaní (Vlax):</span> <span class="phrase">Kamav tut</span></div>
+<div class="item"><span class="num">365.</span> <span class="lang">Rumanche:</span> <span class="phrase">Jeu te ama</span></div>
+<div class="item"><span class="num">366.</span> <span class="lang">Runyakitara:</span> <span class="phrase">Ninkukunda</span></div>
+<div class="item"><span class="num">367.</span> <span class="lang">Rusino:</span> <span class="phrase">Lublyu tebe</span></div>
+<div class="item"><span class="num">368.</span> <span class="lang">Sabanés:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">369.</span> <span class="lang">Sahaptin:</span> <span class="phrase">I-yane-pasha</span></div>
+<div class="item"><span class="num">370.</span> <span class="lang">Salish:</span> <span class="phrase">In-shul-thl</span></div>
+<div class="item"><span class="num">371.</span> <span class="lang">Sami (Inari):</span> <span class="phrase">Mun ráhkistan tu</span></div>
+<div class="item"><span class="num">372.</span> <span class="lang">Sami (Lule):</span> <span class="phrase">Mun ráhkistan tu</span></div>
+<div class="item"><span class="num">373.</span> <span class="lang">Sami (Skolt):</span> <span class="phrase">Mun ráhkistan tu</span></div>
+<div class="item"><span class="num">374.</span> <span class="lang">Sami (Sur):</span> <span class="phrase">Mun ráhkistan tu</span></div>
+<div class="item"><span class="num">375.</span> <span class="lang">Sango (República Centroafricana):</span> <span class="phrase">Mbi yé mo</span></div>
+<div class="item"><span class="num">376.</span> <span class="lang">Sanskrit:</span> <span class="phrase">Aham priyami tvami</span></div>
+<div class="item"><span class="num">377.</span> <span class="lang">Santali:</span> <span class="phrase">Inim nungshi</span></div>
+<div class="item"><span class="num">378.</span> <span class="lang">Sara:</span> <span class="phrase">M'bi fe</span></div>
+<div class="item"><span class="num">379.</span> <span class="lang">Sassarese:</span> <span class="phrase">Ti ammu</span></div>
+<div class="item"><span class="num">380.</span> <span class="lang">Secwepemc:</span> <span class="phrase">K'wiyen</span></div>
+<div class="item"><span class="num">381.</span> <span class="lang">Sedang:</span> <span class="phrase">Anh yêu em</span></div>
+<div class="item"><span class="num">382.</span> <span class="lang">Selkup:</span> <span class="phrase">In’ d’an’</span></div>
+<div class="item"><span class="num">383.</span> <span class="lang">Seminola:</span> <span class="phrase">Cem vtekat</span></div>
+<div class="item"><span class="num">384.</span> <span class="lang">Sena:</span> <span class="phrase">Ndinokuda</span></div>
+<div class="item"><span class="num">385.</span> <span class="lang">Sere:</span> <span class="phrase">Ndimakukonda</span></div>
+<div class="item"><span class="num">386.</span> <span class="lang">Serer:</span> <span class="phrase">Dama la nob</span></div>
+<div class="item"><span class="num">387.</span> <span class="lang">Sesotho:</span> <span class="phrase">Ke a go rata</span></div>
+<div class="item"><span class="num">388.</span> <span class="lang">Shona:</span> <span class="phrase">Ndinokuda</span></div>
+<div class="item"><span class="num">389.</span> <span class="lang">Shuswap:</span> <span class="phrase">K'wiyen</span></div>
+<div class="item"><span class="num">390.</span> <span class="lang">Sidaamo:</span> <span class="phrase">Si'nohe</span></div>
+<div class="item"><span class="num">391.</span> <span class="lang">Sikani:</span> <span class="phrase">Nuh-tsu</span></div>
+<div class="item"><span class="num">392.</span> <span class="lang">Siksika:</span> <span class="phrase">Nitsíikopowa</span></div>
+<div class="item"><span class="num">393.</span> <span class="lang">Sindi:</span> <span class="phrase">Munhjo dil tawan te ahe</span></div>
+<div class="item"><span class="num">394.</span> <span class="lang">Sinhala:</span> <span class="phrase">Mama oyata adarei</span></div>
+<div class="item"><span class="num">395.</span> <span class="lang">Slovene:</span> <span class="phrase">Ljubim te</span></div>
+<div class="item"><span class="num">396.</span> <span class="lang">Sogdiano:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">397.</span> <span class="lang">Sokotri:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">398.</span> <span class="lang">Solos:</span> <span class="phrase">Ie tu uvu</span></div>
+<div class="item"><span class="num">399.</span> <span class="lang">Somali:</span> <span class="phrase">Waan ku jecelahay</span></div>
+<div class="item"><span class="num">400.</span> <span class="lang">Soninke:</span> <span class="phrase">Dama la nob</span></div>
+<div class="item"><span class="num">401.</span> <span class="lang">Sotho (Norte):</span> <span class="phrase">Ke a go rata</span></div>
+<div class="item"><span class="num">402.</span> <span class="lang">Sranan:</span> <span class="phrase">Mi lobi yu</span></div>
+<div class="item"><span class="num">403.</span> <span class="lang">Subanen:</span> <span class="phrase">Gukuy dika</span></div>
+<div class="item"><span class="num">404.</span> <span class="lang">Sumerio:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">405.</span> <span class="lang">Susu:</span> <span class="phrase">N'xanu</span></div>
+<div class="item"><span class="num">406.</span> <span class="lang">Suazi:</span> <span class="phrase">Ngiyakutsandza</span></div>
+<div class="item"><span class="num">407.</span> <span class="lang">Tabasaro:</span> <span class="phrase">Zu vu kuz-huz</span></div>
+<div class="item"><span class="num">408.</span> <span class="lang">Tadzhik:</span> <span class="phrase">Man turo dūst medoram</span></div>
+<div class="item"><span class="num">409.</span> <span class="lang">Tagalo (Filipino):</span> <span class="phrase">Mahal kita</span></div>
+<div class="item"><span class="num">410.</span> <span class="lang">Tahitiano:</span> <span class="phrase">Ua here vau ia oe</span></div>
+<div class="item"><span class="num">411.</span> <span class="lang">Talysh:</span> <span class="phrase">Ez to dūst dorum</span></div>
+<div class="item"><span class="num">412.</span> <span class="lang">Tamashek:</span> <span class="phrase">Tireg-i</span></div>
+<div class="item"><span class="num">413.</span> <span class="lang">Tamil:</span> <span class="phrase">Naan unnai kathalikiren</span></div>
+<div class="item"><span class="num">414.</span> <span class="lang">Tártaro (Crimea):</span> <span class="phrase">Seni sevem</span></div>
+<div class="item"><span class="num">415.</span> <span class="lang">Tártaro (Volga):</span> <span class="phrase">Min sine yaratam</span></div>
+<div class="item"><span class="num">416.</span> <span class="lang">Tausug:</span> <span class="phrase">Akú kasing-kasing kaw</span></div>
+<div class="item"><span class="num">417.</span> <span class="lang">Tày:</span> <span class="phrase">Anh yêu em</span></div>
+<div class="item"><span class="num">418.</span> <span class="lang">Tehuelche:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">419.</span> <span class="lang">Telugu:</span> <span class="phrase">Nenu ninnu premistunnanu</span></div>
+<div class="item"><span class="num">420.</span> <span class="lang">Terena:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">421.</span> <span class="lang">Tetum:</span> <span class="phrase">Hau hadomi o</span></div>
+<div class="item"><span class="num">422.</span> <span class="lang">Thai:</span> <span class="phrase">Chan rak khun</span></div>
+<div class="item"><span class="num">423.</span> <span class="lang">Tharu:</span> <span class="phrase">Hum toke prem kare</span></div>
+<div class="item"><span class="num">424.</span> <span class="lang">Tibetano:</span> <span class="phrase">Nga rang la ga po yö</span></div>
+<div class="item"><span class="num">425.</span> <span class="lang">Tigre:</span> <span class="phrase">Yewedeleki</span></div>
+<div class="item"><span class="num">426.</span> <span class="lang">Tigriña:</span> <span class="phrase">Yewedeleki</span></div>
+<div class="item"><span class="num">427.</span> <span class="lang">Timnense:</span> <span class="phrase">N'gho ni</span></div>
+<div class="item"><span class="num">428.</span> <span class="lang">Tiv:</span> <span class="phrase">M soo u</span></div>
+<div class="item"><span class="num">429.</span> <span class="lang">Tlingit:</span> <span class="phrase">Wé yaa</span></div>
+<div class="item"><span class="num">430.</span> <span class="lang">Toba:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">431.</span> <span class="lang">Tok Pisin:</span> <span class="phrase">Mi laikim yu</span></div>
+<div class="item"><span class="num">432.</span> <span class="lang">Tonga:</span> <span class="phrase">Ndinokuda</span></div>
+<div class="item"><span class="num">433.</span> <span class="lang">Tongan:</span> <span class="phrase">'Ofa 'atu</span></div>
+<div class="item"><span class="num">434.</span> <span class="lang">Trukese:</span> <span class="phrase">Ua angangúkem</span></div>
+<div class="item"><span class="num">435.</span> <span class="lang">Tsimshian:</span> <span class="phrase">N'wil aaxgw</span></div>
+<div class="item"><span class="num">436.</span> <span class="lang">Tsonga:</span> <span class="phrase">Ndzi ku rhandza</span></div>
+<div class="item"><span class="num">437.</span> <span class="lang">Tswana:</span> <span class="phrase">Ke a go rata</span></div>
+<div class="item"><span class="num">438.</span> <span class="lang">Tulu:</span> <span class="phrase">Yaan ninnanu preeti malpuve</span></div>
+<div class="item"><span class="num">439.</span> <span class="lang">Tumbuka:</span> <span class="phrase">Nkhutemwa</span></div>
+<div class="item"><span class="num">440.</span> <span class="lang">Tunguso:</span> <span class="phrase">Bi siive eevie</span></div>
+<div class="item"><span class="num">441.</span> <span class="lang">Tunecino:</span> <span class="phrase">Nhebbek</span></div>
+<div class="item"><span class="num">442.</span> <span class="lang">Tupi:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">443.</span> <span class="lang">Turco:</span> <span class="phrase">Seni seviyorum</span></div>
+<div class="item"><span class="num">444.</span> <span class="lang">Turcomano:</span> <span class="phrase">Men seni söýýärin</span></div>
+<div class="item"><span class="num">445.</span> <span class="lang">Tuvaluano:</span> <span class="phrase">Au e alofa ia koe</span></div>
+<div class="item"><span class="num">446.</span> <span class="lang">Tuvano:</span> <span class="phrase">Men seni süyemen</span></div>
+<div class="item"><span class="num">447.</span> <span class="lang">Twi:</span> <span class="phrase">Me do wo</span></div>
+<div class="item"><span class="num">448.</span> <span class="lang">Udmurto:</span> <span class="phrase">Mon tonne yaratyly</span></div>
+<div class="item"><span class="num">449.</span> <span class="lang">Uigur:</span> <span class="phrase">Men seni yaxshi körimen</span></div>
+<div class="item"><span class="num">450.</span> <span class="lang">Umpila:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">451.</span> <span class="lang">Urdú:</span> <span class="phrase">Mujhe tumse mohabbat hai</span></div>
+<div class="item"><span class="num">452.</span> <span class="lang">Uskoko:</span> <span class="phrase">Volim te</span></div>
+<div class="item"><span class="num">453.</span> <span class="lang">Uzbeko:</span> <span class="phrase">Men seni sevaman</span></div>
+<div class="item"><span class="num">454.</span> <span class="lang">Vai:</span> <span class="phrase">N'fè</span></div>
+<div class="item"><span class="num">455.</span> <span class="lang">Valenciano:</span> <span class="phrase">T'estime</span></div>
+<div class="item"><span class="num">456.</span> <span class="lang">Valón:</span> <span class="phrase">Dji vos inme</span></div>
+<div class="item"><span class="num">457.</span> <span class="lang">Venda:</span> <span class="phrase">Ndi a ni funa</span></div>
+<div class="item"><span class="num">458.</span> <span class="lang">Veneciano:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">459.</span> <span class="lang">Vepsio:</span> <span class="phrase">Minä armastan sind</span></div>
+<div class="item"><span class="num">460.</span> <span class="lang">Vietnamita:</span> <span class="phrase">Anh yêu em</span></div>
+<div class="item"><span class="num">461.</span> <span class="lang">Võro:</span> <span class="phrase">Ma armastan sind</span></div>
+<div class="item"><span class="num">462.</span> <span class="lang">Votic:</span> <span class="phrase">Ma armastan sind</span></div>
+<div class="item"><span class="num">463.</span> <span class="lang">Wa:</span> <span class="phrase">Ngai oi ngi</span></div>
+<div class="item"><span class="num">464.</span> <span class="lang">Wagaya:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">465.</span> <span class="lang">Wallisiano:</span> <span class="phrase">Ofa atu</span></div>
+<div class="num">466.</span> <span class="lang">Warao:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">467.</span> <span class="lang">Welsh:</span> <span class="phrase">Rwy'n dy garu di</span></div>
+<div class="item"><span class="num">468.</span> <span class="lang">Wendish:</span> <span class="phrase">Lubuju te</span></div>
+<div class="item"><span class="num">469.</span> <span class="lang">Wolof:</span> <span class="phrase">Dama la nob</span></div>
+<div class="item"><span class="num">470.</span> <span class="lang">Xhosa:</span> <span class="phrase">Ndiyakuthanda</span></div>
+<div class="item"><span class="num">471.</span> <span class="lang">Yakuto:</span> <span class="phrase">Min èni taabïm</span></div>
+<div class="item"><span class="num">472.</span> <span class="lang">Yao:</span> <span class="phrase">N'gwe ni gwe</span></div>
+<div class="item"><span class="num">473.</span> <span class="lang">Yapese:</span> <span class="phrase">Gow'u</span></div>
+<div class="item"><span class="num">474.</span> <span class="lang">Yiddish:</span> <span class="phrase">Ikh hob dikh lib</span></div>
+<div class="item"><span class="num">475.</span> <span class="lang">Yoruba:</span> <span class="phrase">Mo nifẹẹ rẹ</span></div>
+<div class="item"><span class="num">476.</span> <span class="lang">Yucateco:</span> <span class="phrase">In yaakumech</span></div>
+<div class="item"><span class="num">477.</span> <span class="lang">Zapoteco:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">478.</span> <span class="lang">Zazaki:</span> <span class="phrase">Ez to ra hes keno</span></div>
+<div class="item"><span class="num">479.</span> <span class="lang">Zelanda:</span> <span class="phrase">Ik hou van jou</span></div>
+<div class="item"><span class="num">480.</span> <span class="lang">Zhuang:</span> <span class="phrase">Gou gai neix</span></div>
+<div class="item"><span class="num">481.</span> <span class="lang">Zulú:</span> <span class="phrase">Ngiyakuthanda</span></div>
+<div class="item"><span class="num">482.</span> <span class="lang">Zuñi:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">483.</span> <span class="lang">Achang:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">484.</span> <span class="lang">Aghul:</span> <span class="phrase">Zu vu kuz-huz</span></div>
+<div class="item"><span class="num">485.</span> <span class="lang">Aiwo:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">486.</span> <span class="lang">Akan:</span> <span class="phrase">Me do wo</span></div>
+<div class="item"><span class="num">487.</span> <span class="lang">Ambo:</span> <span class="phrase">Ninakukwila</span></div>
+<div class="item"><span class="num">488.</span> <span class="lang">Andi:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">489.</span> <span class="lang">Angor:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">490.</span> <span class="lang">Arabo:</span> <span class="phrase">Ana uhibbuka</span></div>
+<div class="item"><span class="num">491.</span> <span class="lang">Ateso:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">492.</span> <span class="lang">Awngi:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">493.</span> <span class="lang">Bajau:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">494.</span> <span class="lang">Batak:</span> <span class="phrase">Holong rohangku di ho</span></div>
+<div class="item"><span class="num">495.</span> <span class="lang">Beli:</span> <span class="phrase">Mi amoy te</span></div>
+<div class="item"><span class="num">496.</span> <span class="lang">Berber:</span> <span class="phrase">Hemghik</span></div>
+<div class="item"><span class="num">497.</span> <span class="lang">Bondei:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">498.</span> <span class="lang">Burmese:</span> <span class="phrase">Chit pa de</span></div>
+<div class="item"><span class="num">499.</span> <span class="lang">Camas:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">500.</span> <span class="lang">Chamic:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">501.</span> <span class="lang">Chikano:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">502.</span> <span class="lang">Chin:</span> <span class="phrase">Ka duh i</span></div>
+<div class="item"><span class="num">503.</span> <span class="lang">Chirigano:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">504.</span> <span class="lang">Chukchi:</span> <span class="phrase">Gimnygryn</span></div>
+<div class="item"><span class="num">505.</span> <span class="lang">Chuukese:</span> <span class="phrase">Ua angangúkem</span></div>
+<div class="item"><span class="num">506.</span> <span class="lang">Cibemba:</span> <span class="phrase">Nalikutemwa</span></div>
+<div class="item"><span class="num">507.</span> <span class="lang">Cimbrio:</span> <span class="phrase">Ich liebe dich</span></div>
+<div class="item"><span class="num">508.</span> <span class="lang">Cingalés:</span> <span class="phrase">Mama oyata adarei</span></div>
+<div class="item"><span class="num">509.</span> <span class="lang">Cocopá:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">510.</span> <span class="lang">Comanche:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">511.</span> <span class="lang">Coptico:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">512.</span> <span class="lang">Cornuallés:</span> <span class="phrase">My a'th kar</span></div>
+<div class="item"><span class="num">513.</span> <span class="lang">Corsicano:</span> <span class="phrase">Ti tengu cara</span></div>
+<div class="item"><span class="num">514.</span> <span class="lang">Creek:</span> <span class="phrase">Cem vtekat</span></div>
+<div class="item"><span class="num">515.</span> <span class="lang">Criollo haitiano:</span> <span class="phrase">Mwen renmen ou</span></div>
+<div class="item"><span class="num">516.</span> <span class="lang">Crow:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">517.</span> <span class="lang">Dakota:</span> <span class="phrase">Techihila</span></div>
+<div class="item"><span class="num">518.</span> <span class="lang">Dano:</span> <span class="phrase">Jeg elsker dig</span></div>
+<div class="item"><span class="num">519.</span> <span class="lang">Dargua:</span> <span class="phrase">Nua-nu di-nu</span></div>
+<div class="item"><span class="num">520.</span> <span class="lang">Dinka:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">521.</span> <span class="lang">Divehi:</span> <span class="phrase">Aharen kalaa dheke loabi vamey</span></div>
+<div class="item"><span class="num">522.</span> <span class="lang">Dogri:</span> <span class="phrase">Main tainu pyar karda</span></div>
+<div class="item"><span class="num">523.</span> <span class="lang">Dongo:</span> <span class="phrase">Nalingi yo</span></div>
+<div class="item"><span class="num">524.</span> <span class="lang">Dravidiano:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">525.</span> <span class="lang">Dungan:</span> <span class="phrase">Vo ai ni</span></div>
+<div class="item"><span class="num">526.</span> <span class="lang">Dzongkha:</span> <span class="phrase">Nga gi choe lu ga po yo</span></div>
+<div class="item"><span class="num">527.</span> <span class="lang">Efik:</span> <span class="phrase">Mmama afo</span></div>
+<div class="item"><span class="num">528.</span> <span class="lang">Erzya:</span> <span class="phrase">Mon ton vechkan</span></div>
+<div class="item"><span class="num">529.</span> <span class="lang">Estonio:</span> <span class="phrase">Ma armastan sind</span></div>
+<div class="item"><span class="num">530.</span> <span class="lang">Ewe:</span> <span class="phrase">Me lɔ̃ wò</span></div>
+<div class="item"><span class="num">531.</span> <span class="lang">Fang:</span> <span class="phrase">Me ne wam</span></div>
+<div class="item"><span class="num">532.</span> <span class="lang">Feroés:</span> <span class="phrase">Eg elski teg</span></div>
+<div class="item"><span class="num">533.</span> <span class="lang">Fiyiano:</span> <span class="phrase">Au domoni iko</span></div>
+<div class="item"><span class="num">534.</span> <span class="lang">Fon:</span> <span class="phrase">Mi yé wò</span></div>
+<div class="item"><span class="num">535.</span> <span class="lang">Frisón:</span> <span class="phrase">Ik hâld fan dy</span></div>
+<div class="item"><span class="num">536.</span> <span class="lang">Friulano:</span> <span class="phrase">Ti vuei ben</span></div>
+<div class="item"><span class="num">537.</span> <span class="lang">Fula:</span> <span class="phrase">Mi yid ma</span></div>
+<div class="item"><span class="num">538.</span> <span class="lang">Ga:</span> <span class="phrase">Mii suɔɔ bo</span></div>
+<div class="item"><span class="num">539.</span> <span class="lang">Gagauzo:</span> <span class="phrase">Seni seviyerim</span></div>
+<div class="item"><span class="num">540.</span> <span class="lang">Galés:</span> <span class="phrase">Rwy'n dy garu di</span></div>
+<div class="item"><span class="num">541.</span> <span class="lang">Galla:</span> <span class="phrase">Si jaaladha</span></div>
+<div class="item"><span class="num">542.</span> <span class="lang">Garifuna:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">543.</span> <span class="lang">Gayo:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">544.</span> <span class="lang">Gbaya:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">545.</span> <span class="lang">Gheg:</span> <span class="phrase">Te dua</span></div>
+<div class="item"><span class="num">546.</span> <span class="lang">Gilbertese:</span> <span class="phrase">I tangiriko</span></div>
+<div class="item"><span class="num">547.</span> <span class="lang">Gogo:</span> <span class="phrase">Nigutambua</span></div>
+<div class="item"><span class="num">548.</span> <span class="lang">Gondi:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">549.</span> <span class="lang">Gorontalo:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">550.</span> <span class="lang">Gothic:</span> <span class="phrase">Ik frijo þuk</span></div>
+<div class="item"><span class="num">551.</span> <span class="lang">Grebo:</span> <span class="phrase">Ni bowa</span></div>
+<div class="item"><span class="num">552.</span> <span class="lang">Griko:</span> <span class="phrase">Se thelo</span></div>
+<div class="item"><span class="num">553.</span> <span class="lang">Guanche:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">554.</span> <span class="lang">Guaraní:</span> <span class="phrase">Rohayhu</span></div>
+<div class="item"><span class="num">555.</span> <span class="lang">Guaymí:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">556.</span> <span class="lang">Gujarati:</span> <span class="phrase">Hu tanne prem karu chu</span></div>
+<div class="item"><span class="num">557.</span> <span class="lang">Gumuz:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">558.</span> <span class="lang">Gwich'in:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">559.</span> <span class="lang">Hadiyya:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">560.</span> <span class="lang">Hakka:</span> <span class="phrase">Ngai oi ngi</span></div>
+<div class="item"><span class="num">561.</span> <span class="lang">Halh:</span> <span class="phrase">Bi chamd hairtai</span></div>
+<div class="item"><span class="num">562.</span> <span class="lang">Haya:</span> <span class="phrase">Ninakukwila</span></div>
+<div class="item"><span class="num">563.</span> <span class="lang">Hazaragi:</span> <span class="phrase">Tu-ra dōst dārum</span></div>
+<div class="item"><span class="num">564.</span> <span class="lang">Hebreo:</span> <span class="phrase">Ani ohev otach</span></div>
+<div class="item"><span class="num">565.</span> <span class="lang">Herero:</span> <span class="phrase">Mbarukwe</span></div>
+<div class="item"><span class="num">566.</span> <span class="lang">Hiligaynon:</span> <span class="phrase">Palangga ko ikaw</span></div>
+<div class="item"><span class="num">567.</span> <span class="lang">Hindi:</span> <span class="phrase">Main tumse pyar karta hoon</span></div>
+<div class="item"><span class="num">568.</span> <span class="lang">Hiri Motu:</span> <span class="phrase">Lalo-guado oi</span></div>
+<div class="item"><span class="num">569.</span> <span class="lang">Hmong:</span> <span class="phrase">Kuv hlub koj</span></div>
+<div class="item"><span class="num">570.</span> <span class="lang">Hopi:</span> <span class="phrase">Nu' umi unangwa'ta</span></div>
+<div class="item"><span class="num">571.</span> <span class="lang">Hruso:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">572.</span> <span class="lang">Huasteco:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">573.</span> <span class="lang">Huichol:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">574.</span> <span class="lang">Hupa:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">575.</span> <span class="lang">Iban:</span> <span class="phrase">Aku sayau nuan</span></div>
+<div class="item"><span class="num">576.</span> <span class="lang">Ibanag:</span> <span class="phrase">Ayayan taka</span></div>
+<div class="item"><span class="num">577.</span> <span class="lang">Ibibio:</span> <span class="phrase">Mmama afo</span></div>
+<div class="item"><span class="num">578.</span> <span class="lang">Ibo:</span> <span class="phrase">A hụrụ m gị n'anya</span></div>
+<div class="item"><span class="num">579.</span> <span class="lang">Icelandés:</span> <span class="phrase">Ég elska þig</span></div>
+<div class="item"><span class="num">580.</span> <span class="lang">Ido:</span> <span class="phrase">Me amas tu</span></div>
+<div class="item"><span class="num">581.</span> <span class="lang">Igbo:</span> <span class="phrase">A hụrụ m gị n'anya</span></div>
+<div class="item"><span class="num">582.</span> <span class="lang">Ilocano:</span> <span class="phrase">Ay-ayatenka</span></div>
+<div class="item"><span class="num">583.</span> <span class="lang">Indonesio:</span> <span class="phrase">Aku mencintaimu</span></div>
+<div class="item"><span class="num">584.</span> <span class="lang">Inglés:</span> <span class="phrase">I love you</span></div>
+<div class="item"><span class="num">585.</span> <span class="lang">Inglés (Antiguo):</span> <span class="phrase">Ic lufie þec</span></div>
+<div class="item"><span class="num">586.</span> <span class="lang">Inglés (Escocés):</span> <span class="phrase">Ah loe ye</span></div>
+<div class="item"><span class="num">587.</span> <span class="lang">Inglés (Pidgin):</span> <span class="phrase">Ah luv yu</span></div>
+<div class="item"><span class="num">588.</span> <span class="lang">Inglés (Sulu):</span> <span class="phrase">I love you</span></div>
+<div class="item"><span class="num">589.</span> <span class="lang">Inglés (Yorkshire):</span> <span class="phrase">Ah luv tha</span></div>
+<div class="item"><span class="num">590.</span> <span class="lang">Ingusetio:</span> <span class="phrase">So hoarz yo</span></div>
+<div class="item"><span class="num">591.</span> <span class="lang">Inuktitut:</span> <span class="phrase">Nagligivagit</span></div>
+<div class="item"><span class="num">592.</span> <span class="lang">Inupiatun:</span> <span class="phrase">Piqpagivagit</span></div>
+<div class="item"><span class="num">593.</span> <span class="lang">Irlandés:</span> <span class="phrase">Taim i' ngra leat</span></div>
+<div class="item"><span class="num">594.</span> <span class="lang">Iroques:</span> <span class="phrase">Konoronhkwa</span></div>
+<div class="item"><span class="num">595.</span> <span class="lang">Italiano:</span> <span class="phrase">Ti amo</span></div>
+<div class="item"><span class="num">596.</span> <span class="lang">Itelmen:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">597.</span> <span class="lang">Iu Mien:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">598.</span> <span class="lang">Ivatan:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">599.</span> <span class="lang">Izon:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">600.</span> <span class="lang">Japonés:</span> <span class="phrase">Aishiteru</span></div>
+<div class="item"><span class="num">601.</span> <span class="lang">Javanés:</span> <span class="phrase">Aku tresno marang sliramu</span></div>
+<div class="item"><span class="num">602.</span> <span class="lang">Jerriais:</span> <span class="phrase">J't'aime</span></div>
+<div class="item"><span class="num">603.</span> <span class="lang">Judeoespañol:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">604.</span> <span class="lang">Jula:</span> <span class="phrase">M'bi fe</span></div>
+<div class="item"><span class="num">605.</span> <span class="lang">Kabardiano:</span> <span class="phrase">Sè wè fëlhë</span></div>
+<div class="item"><span class="num">606.</span> <span class="lang">Kabyle:</span> <span class="phrase">Hemlegh-k</span></div>
+<div class="item"><span class="num">607.</span> <span class="lang">Kachin:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">608.</span> <span class="lang">Kalmyk:</span> <span class="phrase">Bi chamd durtai</span></div>
+<div class="item"><span class="num">609.</span> <span class="lang">Kamba:</span> <span class="phrase">Ninakukwila</span></div>
+<div class="item"><span class="num">610.</span> <span class="lang">Kammu:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">611.</span> <span class="lang">Kannada:</span> <span class="phrase">Naanu ninna preetistene</span></div>
+<div class="item"><span class="num">612.</span> <span class="lang">Kanuri:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">613.</span> <span class="lang">Karachay:</span> <span class="phrase">Men seni süyemen</span></div>
+<div class="item"><span class="num">614.</span> <span class="lang">Karakalpak:</span> <span class="phrase">Men seni süyemen</span></div>
+<div class="item"><span class="num">615.</span> <span class="lang">Karen:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">616.</span> <span class="lang">Kareliano:</span> <span class="phrase">Minä armastan sind</span></div>
+<div class="item"><span class="num">617.</span> <span class="lang">Kashmiri:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">618.</span> <span class="lang">Kashubian:</span> <span class="phrase">Kocham cã</span></div>
+<div class="item"><span class="num">619.</span> <span class="lang">Katchi:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">620.</span> <span class="lang">Kazajo:</span> <span class="phrase">Men seni süyemin</span></div>
+<div class="item"><span class="num">621.</span> <span class="lang">Ket:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">622.</span> <span class="lang">Khalkha:</span> <span class="phrase">Bi chamd hairtai</span></div>
+<div class="item"><span class="num">623.</span> <span class="lang">Khasi:</span> <span class="phrase">Nga ëit ëa</span></div>
+<div class="item"><span class="num">624.</span> <span class="lang">Khmer:</span> <span class="phrase">Khnhom srolanh neak</span></div>
+<div class="item"><span class="num">625.</span> <span class="lang">Khoekhoe:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">626.</span> <span class="lang">Kikuyu:</span> <span class="phrase">Nii ni ngwende</span></div>
+<div class="item"><span class="num">627.</span> <span class="lang">Kimbundu:</span> <span class="phrase">Ngikuzola</span></div>
+<div class="item"><span class="num">628.</span> <span class="lang">Kinyarwanda:</span> <span class="phrase">Ndagukunda</span></div>
+<div class="item"><span class="num">629.</span> <span class="lang">Kirguís:</span> <span class="phrase">Men seni süyöm</span></div>
+<div class="item"><span class="num">630.</span> <span class="lang">Kirundi:</span> <span class="phrase">Ndagukunda</span></div>
+<div class="item"><span class="num">631.</span> <span class="lang">Kiswahili:</span> <span class="phrase">Nakupenda</span></div>
+<div class="item"><span class="num">632.</span> <span class="lang">Kituba:</span> <span class="phrase">Nalingi yo</span></div>
+<div class="item"><span class="num">633.</span> <span class="lang">Klamath:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">634.</span> <span class="lang">Klingon:</span> <span class="phrase">qamuSHa'</span></div>
+<div class="item"><span class="num">635.</span> <span class="lang">Komi:</span> <span class="phrase">Me rádyta tène</span></div>
+<div class="item"><span class="num">636.</span> <span class="lang">Kongo:</span> <span class="phrase">Mono ke zolaka nge</span></div>
+<div class="item"><span class="num">637.</span> <span class="lang">Konkani:</span> <span class="phrase">Tuvem mozo mog korta</span></div>
+<div class="item"><span class="num">638.</span> <span class="lang">Koptos:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">639.</span> <span class="lang">Koreano:</span> <span class="phrase">Saranghae</span></div>
+<div class="item"><span class="num">640.</span> <span class="lang">Korniko:</span> <span class="phrase">My a'th kar</span></div>
+<div class="item"><span class="num">641.</span> <span class="lang">Koryak:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">642.</span> <span class="lang">Kosraean:</span> <span class="phrase">Nga suoluh ke sum</span></div>
+<div class="item"><span class="num">643.</span> <span class="lang">Kpele:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">644.</span> <span class="lang">Krio:</span> <span class="phrase">A lobi yu</span></div>
+<div class="item"><span class="num">645.</span> <span class="lang">Kru:</span> <span class="phrase">Ni bowa</span></div>
+<div class="item"><span class="num">646.</span> <span class="lang">Kumyk:</span> <span class="phrase">Men seni süyemen</span></div>
+<div class="item"><span class="num">647.</span> <span class="lang">Kurdish:</span> <span class="phrase">Ez te hezdikhem</span></div>
+<div class="item"><span class="num">648.</span> <span class="lang">Kurukh:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">649.</span> <span class="lang">Kutchi:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">650.</span> <span class="lang">Kvengo:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">651.</span> <span class="lang">Ladino:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">652.</span> <span class="lang">Lahu:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">653.</span> <span class="lang">Lak:</span> <span class="phrase">Zu vu kuz-huz</span></div>
+<div class="item"><span class="num">654.</span> <span class="lang">Lamba:</span> <span class="phrase">Ninakukwila</span></div>
+<div class="item"><span class="num">655.</span> <span class="lang">Lao:</span> <span class="phrase">Khoi hak chao</span></div>
+<div class="item"><span class="num">656.</span> <span class="lang">Latgaliano:</span> <span class="phrase">Es tevi mīļoju</span></div>
+<div class="item"><span class="num">657.</span> <span class="lang">Latín:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">658.</span> <span class="lang">Letón:</span> <span class="phrase">Es tevi mīlu</span></div>
+<div class="item"><span class="num">659.</span> <span class="lang">Lezgiano:</span> <span class="phrase">Zün wüzaz khüzwa</span></div>
+<div class="item"><span class="num">660.</span> <span class="lang">Limburgués:</span> <span class="phrase">Ich hald van dich</span></div>
+<div class="item"><span class="num">661.</span> <span class="lang">Lingala:</span> <span class="phrase">Nalingi yo</span></div>
+<div class="item"><span class="num">662.</span> <span class="lang">Lisu:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">663.</span> <span class="lang">Lituano:</span> <span class="phrase">Aš tave myliu</span></div>
+<div class="item"><span class="num">664.</span> <span class="lang">Livonio:</span> <span class="phrase">Ma armastan sind</span></div>
+<div class="item"><span class="num">665.</span> <span class="lang">Lojban:</span> <span class="phrase">mi do prami</span></div>
+<div class="item"><span class="num">666.</span> <span class="lang">Lombardo:</span> <span class="phrase">Te voei ben</span></div>
+<div class="item"><span class="num">667.</span> <span class="lang">Low German:</span> <span class="phrase">Ik heff di leev</span></div>
+<div class="item"><span class="num">668.</span> <span class="lang">Lozi:</span> <span class="phrase">Ni ku lata</span></div>
+<div class="item"><span class="num">669.</span> <span class="lang">Luba:</span> <span class="phrase">Ndi mukunanga</span></div>
+<div class="item"><span class="num">670.</span> <span class="lang">Luganda:</span> <span class="phrase">Nkwagala</span></div>
+<div class="item"><span class="num">671.</span> <span class="lang">Lule Sami:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">672.</span> <span class="lang">Luo:</span> <span class="phrase">Aheri</span></div>
+<div class="item"><span class="num">673.</span> <span class="lang">Lushootseed:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">674.</span> <span class="lang">Luxemburgués:</span> <span class="phrase">Ech hun dech gär</span></div>
+<div class="item"><span class="num">675.</span> <span class="lang">Macedonio:</span> <span class="phrase">Jas te sakam</span></div>
+<div class="item"><span class="num">676.</span> <span class="lang">Madurese:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">677.</span> <span class="lang">Magahi:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">678.</span> <span class="lang">Maithili:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">679.</span> <span class="lang">Makassar:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">680.</span> <span class="lang">Malayo:</span> <span class="phrase">Saya cintakan awak</span></div>
+<div class="item"><span class="num">681.</span> <span class="lang">Malayalam:</span> <span class="phrase">Njan ninne premikkunnu</span></div>
+<div class="item"><span class="num">682.</span> <span class="lang">Maldivo:</span> <span class="phrase">Aharen kalaa dheke loabi vamey</span></div>
+<div class="item"><span class="num">683.</span> <span class="lang">Maltés:</span> <span class="phrase">Inħobbok</span></div>
+<div class="item"><span class="num">684.</span> <span class="lang">Mam:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">685.</span> <span class="lang">Manchu:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">686.</span> <span class="lang">Mandarin:</span> <span class="phrase">Wo ai ni</span></div>
+<div class="item"><span class="num">687.</span> <span class="lang">Mandinga:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">688.</span> <span class="lang">Manés:</span> <span class="phrase">Ta graih aym ort</span></div>
+<div class="item"><span class="num">689.</span> <span class="lang">Manipuri:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">690.</span> <span class="lang">Mansi:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">691.</span> <span class="lang">Manx:</span> <span class="phrase">Ta graih aym ort</span></div>
+<div class="item"><span class="num">692.</span> <span class="lang">Maorí:</span> <span class="phrase">Kei te aroha au ki a koe</span></div>
+<div class="item"><span class="num">693.</span> <span class="lang">Mapudungun:</span> <span class="phrase">Piwkeyeyu</span></div>
+<div class="item"><span class="num">694.</span> <span class="lang">Marathi:</span> <span class="phrase">Mi tuzya var prem karto</span></div>
+<div class="item"><span class="num">695.</span> <span class="lang">Mari:</span> <span class="phrase">My tyjym jöratem</span></div>
+<div class="item"><span class="num">696.</span> <span class="lang">Marshallese:</span> <span class="phrase">Iakwe yokwe yuk</span></div>
+<div class="item"><span class="num">697.</span> <span class="lang">Masai:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">698.</span> <span class="lang">Maya:</span> <span class="phrase">In yaakumech</span></div>
+<div class="item"><span class="num">699.</span> <span class="lang">Mazateco:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">700.</span> <span class="lang">Meitei:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">701.</span> <span class="lang">Mende:</span> <span class="phrase">N'gwa lolo</span></div>
+<div class="item"><span class="num">702.</span> <span class="lang">Menominee:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">703.</span> <span class="lang">Meru:</span> <span class="phrase">Ninakukwila</span></div>
+<div class="item"><span class="num">704.</span> <span class="lang">Mi'kmaq:</span> <span class="phrase">Kesalul</span></div>
+<div class="item"><span class="num">705.</span> <span class="lang">Minangkabau:</span> <span class="phrase">Ambo cinto ka ang</span></div>
+<div class="item"><span class="num">706.</span> <span class="lang">Mixteco:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">707.</span> <span class="lang">Mohawk:</span> <span class="phrase">Konoronhkwa</span></div>
+<div class="item"><span class="num">708.</span> <span class="lang">Moksha:</span> <span class="phrase">Mon ton vechkan</span></div>
+<div class="item"><span class="num">709.</span> <span class="lang">Moldavo:</span> <span class="phrase">Te iubesc</span></div>
+<div class="item"><span class="num">710.</span> <span class="lang">Mon:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">711.</span> <span class="lang">Mongo:</span> <span class="phrase">Nalingi yo</span></div>
+<div class="item"><span class="num">712.</span> <span class="lang">Mongol:</span> <span class="phrase">Bi chamd hairtai</span></div>
+<div class="item"><span class="num">713.</span> <span class="lang">Montenegrino:</span> <span class="phrase">Volim te</span></div>
+<div class="item"><span class="num">714.</span> <span class="lang">Mossi:</span> <span class="phrase">Mam nonga fo</span></div>
+<div class="item"><span class="num">715.</span> <span class="lang">Muna:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">716.</span> <span class="lang">Munduruku:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">717.</span> <span class="lang">Muscogee:</span> <span class="phrase">Cem vtekat</span></div>
+<div class="item"><span class="num">718.</span> <span class="lang">Nahuatl:</span> <span class="phrase">Ni mits tlamiki</span></div>
+<div class="item"><span class="num">719.</span> <span class="lang">Nama:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">720.</span> <span class="lang">Nambikwara:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">721.</span> <span class="lang">Nauruan:</span> <span class="phrase">Nga tsho tsi</span></div>
+<div class="item"><span class="num">722.</span> <span class="lang">Navajo:</span> <span class="phrase">Ayor anosh'ni</span></div>
+<div class="item"><span class="num">723.</span> <span class="lang">Ndebele:</span> <span class="phrase">Niyakuthanda</span></div>
+<div class="item"><span class="num">724.</span> <span class="lang">Ndonga:</span> <span class="phrase">Onda ku hole</span></div>
+<div class="item"><span class="num">725.</span> <span class="lang">Neerlandés:</span> <span class="phrase">Ik hou van jou</span></div>
+<div class="item"><span class="num">726.</span> <span class="lang">Nepali:</span> <span class="phrase">Ma timilai maya garchhu</span></div>
+<div class="item"><span class="num">727.</span> <span class="lang">Newar:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">728.</span> <span class="lang">Nias:</span> <span class="phrase">O'omasö ndra'o khöu</span></div>
+<div class="item"><span class="num">729.</span> <span class="lang">Nigueriano:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">730.</span> <span class="lang">Nivkh:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">731.</span> <span class="lang">Nogayo:</span> <span class="phrase">Men seni süyemen</span></div>
+<div class="item"><span class="num">732.</span> <span class="lang">Noruego (Bokmål):</span> <span class="phrase">Jeg elsker deg</span></div>
+<div class="item"><span class="num">733.</span> <span class="lang">Noruego (Nynorsk):</span> <span class="phrase">Eg elskar deg</span></div>
+<div class="item"><span class="num">734.</span> <span class="lang">Nubio:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">735.</span> <span class="lang">Nuer:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">736.</span> <span class="lang">Nung:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">737.</span> <span class="lang">Nyanja:</span> <span class="phrase">Ndimakukonda</span></div>
+<div class="item"><span class="num">738.</span> <span class="lang">Nyankole:</span> <span class="phrase">Ninkukunda</span></div>
+<div class="item"><span class="num">739.</span> <span class="lang">Nyoro:</span> <span class="phrase">Ninkukunda</span></div>
+<div class="item"><span class="num">740.</span> <span class="lang">Occitano:</span> <span class="phrase">T'aimi</span></div>
+<div class="item"><span class="num">741.</span> <span class="lang">Ojibwa:</span> <span class="phrase">Gizhawenimin</span></div>
+<div class="item"><span class="num">742.</span> <span class="lang">Oriya:</span> <span class="phrase">Mu tumaku bhala pae</span></div>
+<div class="item"><span class="num">743.</span> <span class="lang">Oromo:</span> <span class="phrase">Si jaaladha</span></div>
+<div class="item"><span class="num">744.</span> <span class="lang">Osético:</span> <span class="phrase">Æz dæ uarzyn</span></div>
+<div class="item"><span class="num">745.</span> <span class="lang">Otomi:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">746.</span> <span class="lang">Paiute:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">747.</span> <span class="lang">Palauano:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">748.</span> <span class="lang">Pali:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">749.</span> <span class="lang">Pampango:</span> <span class="phrase">Irang taka</span></div>
+<div class="item"><span class="num">750.</span> <span class="lang">Pangasinan:</span> <span class="phrase">Inaro taka</span></div>
+<div class="item"><span class="num">701.</span> <span class="lang">Mende:</span> <span class="phrase">N'gwa lolo</span></div>
+<div class="item"><span class="num">702.</span> <span class="lang">Menominee:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">703.</span> <span class="lang">Meru:</span> <span class="phrase">Ninakukwila</span></div>
+<div class="item"><span class="num">704.</span> <span class="lang">Mi'kmaq:</span> <span class="phrase">Kesalul</span></div>
+<div class="item"><span class="num">705.</span> <span class="lang">Minangkabau:</span> <span class="phrase">Ambo cinto ka ang</span></div>
+<div class="item"><span class="num">706.</span> <span class="lang">Mixteco:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">707.</span> <span class="lang">Mohawk:</span> <span class="phrase">Konoronhkwa</span></div>
+<div class="item"><span class="num">708.</span> <span class="lang">Moksha:</span> <span class="phrase">Mon ton vechkan</span></div>
+<div class="item"><span class="num">709.</span> <span class="lang">Moldavo:</span> <span class="phrase">Te iubesc</span></div>
+<div class="item"><span class="num">710.</span> <span class="lang">Mon:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">711.</span> <span class="lang">Mongo:</span> <span class="phrase">Nalingi yo</span></div>
+<div class="item"><span class="num">712.</span> <span class="lang">Mongol:</span> <span class="phrase">Bi chamd hairtai</span></div>
+<div class="item"><span class="num">713.</span> <span class="lang">Montenegrino:</span> <span class="phrase">Volim te</span></div>
+<div class="item"><span class="num">714.</span> <span class="lang">Mossi:</span> <span class="phrase">Mam nonga fo</span></div>
+<div class="item"><span class="num">715.</span> <span class="lang">Muna:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">716.</span> <span class="lang">Munduruku:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">717.</span> <span class="lang">Muscogee:</span> <span class="phrase">Cem vtekat</span></div>
+<div class="item"><span class="num">718.</span> <span class="lang">Nahuatl:</span> <span class="phrase">Ni mits tlamiki</span></div>
+<div class="item"><span class="num">719.</span> <span class="lang">Nama:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">720.</span> <span class="lang">Nambikwara:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">721.</span> <span class="lang">Nauruan:</span> <span class="phrase">Nga tsho tsi</span></div>
+<div class="item"><span class="num">722.</span> <span class="lang">Navajo:</span> <span class="phrase">Ayor anosh'ni</span></div>
+<div class="item"><span class="num">723.</span> <span class="lang">Ndebele:</span> <span class="phrase">Niyakuthanda</span></div>
+<div class="item"><span class="num">724.</span> <span class="lang">Ndonga:</span> <span class="phrase">Onda ku hole</span></div>
+<div class="item"><span class="num">725.</span> <span class="lang">Neerlandés:</span> <span class="phrase">Ik hou van jou</span></div>
+<div class="item"><span class="num">726.</span> <span class="lang">Nepali:</span> <span class="phrase">Ma timilai maya garchhu</span></div>
+<div class="item"><span class="num">727.</span> <span class="lang">Newar:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">728.</span> <span class="lang">Nias:</span> <span class="phrase">O'omasö ndra'o khöu</span></div>
+<div class="item"><span class="num">729.</span> <span class="lang">Nigueriano:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">730.</span> <span class="lang">Nivkh:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">731.</span> <span class="lang">Nogayo:</span> <span class="phrase">Men seni süyemen</span></div>
+<div class="item"><span class="num">732.</span> <span class="lang">Noruego (Bokmål):</span> <span class="phrase">Jeg elsker deg</span></div>
+<div class="item"><span class="num">733.</span> <span class="lang">Noruego (Nynorsk):</span> <span class="phrase">Eg elskar deg</span></div>
+<div class="item"><span class="num">734.</span> <span class="lang">Nubio:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">735.</span> <span class="lang">Nuer:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">736.</span> <span class="lang">Nung:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">737.</span> <span class="lang">Nyanja:</span> <span class="phrase">Ndimakukonda</span></div>
+<div class="item"><span class="num">738.</span> <span class="lang">Nyankole:</span> <span class="phrase">Ninkukunda</span></div>
+<div class="item"><span class="num">739.</span> <span class="lang">Nyoro:</span> <span class="phrase">Ninkukunda</span></div>
+<div class="item"><span class="num">740.</span> <span class="lang">Occitano:</span> <span class="phrase">T'aimi</span></div>
+<div class="item"><span class="num">741.</span> <span class="lang">Ojibwa:</span> <span class="phrase">Gizhawenimin</span></div>
+<div class="item"><span class="num">742.</span> <span class="lang">Oriya:</span> <span class="phrase">Mu tumaku bhala pae</span></div>
+<div class="item"><span class="num">743.</span> <span class="lang">Oromo:</span> <span class="phrase">Si jaaladha</span></div>
+<div class="item"><span class="num">744.</span> <span class="lang">Osético:</span> <span class="phrase">Æz dæ uarzyn</span></div>
+<div class="item"><span class="num">745.</span> <span class="lang">Otomi:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">746.</span> <span class="lang">Paiute:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">747.</span> <span class="lang">Palauano:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">748.</span> <span class="lang">Pali:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">749.</span> <span class="lang">Pampango:</span> <span class="phrase">Irang taka</span></div>
+<div class="item"><span class="num">750.</span> <span class="lang">Pangasinan:</span> <span class="phrase">Inaro taka</span></div>
+<div class="item"><span class="num">801.</span> <span class="lang">Slavonio:</span> <span class="phrase">Volim te</span></div>
+<div class="item"><span class="num">802.</span> <span class="lang">Slovaco:</span> <span class="phrase">Ľúbim ťa</span></div>
+<div class="item"><span class="num">803.</span> <span class="lang">Esloveno:</span> <span class="phrase">Ljubim te</span></div>
+<div class="item"><span class="num">804.</span> <span class="lang">Sogdiano:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">805.</span> <span class="lang">Somalí:</span> <span class="phrase">Waan ku jeclahay</span></div>
+<div class="item"><span class="num">806.</span> <span class="lang">Soninke:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">807.</span> <span class="lang">Sonrai:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">808.</span> <span class="lang">Sora:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">809.</span> <span class="lang">Sorbio:</span> <span class="phrase">Lubuju te</span></div>
+<div class="item"><span class="num">810.</span> <span class="lang">Sotho:</span> <span class="phrase">Ke a go rata</span></div>
+<div class="item"><span class="num">811.</span> <span class="lang">Spoken Cree:</span> <span class="phrase">Kisâkihitin</span></div>
+<div class="item"><span class="num">812.</span> <span class="lang">Sranan Tongo:</span> <span class="phrase">Mi lobi yu</span></div>
+<div class="item"><span class="num">813.</span> <span class="lang">Sudanés:</span> <span class="phrase">Abdi bogoh ka anjeun</span></div>
+<div class="item"><span class="num">814.</span> <span class="phrase">Sumbawa:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">815.</span> <span class="lang">Sumerio:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">816.</span> <span class="lang">Sundinés:</span> <span class="phrase">Abdi bogoh ka anjeun</span></div>
+<div class="item"><span class="num">817.</span> <span class="lang">Suruí:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">818.</span> <span class="lang">Susú:</span> <span class="phrase">N'xanu</span></div>
+<div class="item"><span class="num">819.</span> <span class="lang">Suazi:</span> <span class="phrase">Ngiyakutsandza</span></div>
+<div class="item"><span class="num">820.</span> <span class="lang">Sueco:</span> <span class="phrase">Jag älskar dig</span></div>
+<div class="item"><span class="num">821.</span> <span class="lang">Sylheti:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">822.</span> <span class="lang">Tabassaro:</span> <span class="phrase">Zu vu kuz-huz</span></div>
+<div class="item"><span class="num">823.</span> <span class="lang">Tadjiko:</span> <span class="phrase">Man turo dūst medoram</span></div>
+<div class="item"><span class="num">824.</span> <span class="lang">Tagalo:</span> <span class="phrase">Mahal kita</span></div>
+<div class="item"><span class="num">825.</span> <span class="lang">Tahitiano:</span> <span class="phrase">Ua here vau ia oe</span></div>
+<div class="item"><span class="num">826.</span> <span class="lang">Taino:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">827.</span> <span class="lang">Talysh:</span> <span class="phrase">Ez to dūst dorum</span></div>
+<div class="item"><span class="num">828.</span> <span class="lang">Tamazight:</span> <span class="phrase">Hemlegh-k</span></div>
+<div class="item"><span class="num">829.</span> <span class="lang">Tamil:</span> <span class="phrase">Naan unnai kathalikiren</span></div>
+<div class="item"><span class="num">830.</span> <span class="lang">Tarasco:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">831.</span> <span class="lang">Tariana:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">832.</span> <span class="lang">Tártaro:</span> <span class="phrase">Min sine yaratam</span></div>
+<div class="item"><span class="num">833.</span> <span class="lang">Tausug:</span> <span class="phrase">Akú kasing-kasing kaw</span></div>
+<div class="item"><span class="num">834.</span> <span class="lang">Tavastiano:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">835.</span> <span class="lang">Tày:</span> <span class="phrase">Anh yêu em</span></div>
+<div class="item"><span class="num">836.</span> <span class="lang">Tedesco:</span> <span class="phrase">Ich liebe dich</span></div>
+<div class="item"><span class="num">837.</span> <span class="lang">Tehuelche:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">838.</span> <span class="lang">Telugu:</span> <span class="phrase">Nenu ninnu premistunnanu</span></div>
+<div class="item"><span class="num">839.</span> <span class="lang">Terena:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">840.</span> <span class="lang">Tetum:</span> <span class="phrase">Hau hadomi o</span></div>
+<div class="item"><span class="num">841.</span> <span class="lang">Thai:</span> <span class="phrase">Chan rak khun</span></div>
+<div class="item"><span class="num">842.</span> <span class="lang">Tharu:</span> <span class="phrase">Hum toke prem kare</span></div>
+<div class="item"><span class="num">843.</span> <span class="lang">Tibetano:</span> <span class="phrase">Nga rang la ga po yö</span></div>
+<div class="item"><span class="num">844.</span> <span class="lang">Tigre:</span> <span class="phrase">Yewedeleki</span></div>
+<div class="item"><span class="num">845.</span> <span class="lang">Tigriña:</span> <span class="phrase">Yewedeleki</span></div>
+<div class="item"><span class="num">846.</span> <span class="lang">Timnense:</span> <span class="phrase">N'gho ni</span></div>
+<div class="item"><span class="num">847.</span> <span class="lang">Tiv:</span> <span class="phrase">M soo u</span></div>
+<div class="item"><span class="num">848.</span> <span class="lang">Tlingit:</span> <span class="phrase">Wé yaa</span></div>
+<div class="item"><span class="num">849.</span> <span class="lang">Toba:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">850.</span> <span class="lang">Tok Pisin:</span> <span class="phrase">Mi laikim yu</span></div>
+<div class="item"><span class="num">851.</span> <span class="lang">Tokelauano:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">852.</span> <span class="lang">Tonga:</span> <span class="phrase">Oku ou ofa ia koe</span></div>
+<div class="item"><span class="num">853.</span> <span class="lang">Toro:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">854.</span> <span class="lang">Totonaco:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">855.</span> <span class="lang">Trukese:</span> <span class="phrase">Ua angangúkem</span></div>
+<div class="item"><span class="num">856.</span> <span class="lang">Tshiluba:</span> <span class="phrase">Ndi mukunanga</span></div>
+<div class="item"><span class="num">857.</span> <span class="lang">Tshivenḓa:</span> <span class="phrase">Ndo ni funa</span></div>
+<div class="item"><span class="num">858.</span> <span class="lang">Tsonga:</span> <span class="phrase">Ndza ku rhandza</span></div>
+<div class="item"><span class="num">859.</span> <span class="lang">Tswana:</span> <span class="phrase">Ke a go rata</span></div>
+<div class="item"><span class="num">860.</span> <span class="lang">Tuareg:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">861.</span> <span class="lang">Tulu:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">862.</span> <span class="lang">Tumbuka:</span> <span class="phrase">Nkhukutemwa</span></div>
+<div class="item"><span class="num">863.</span> <span class="lang">Tunguso:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">864.</span> <span class="lang">Tunecino:</span> <span class="phrase">Nhebek</span></div>
+<div class="item"><span class="num">865.</span> <span class="lang">Tupi:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">866.</span> <span class="lang">Turco:</span> <span class="phrase">Seni seviyorum</span></div>
+<div class="item"><span class="num">867.</span> <span class="lang">Turkmeno:</span> <span class="phrase">Men seni söýýärin</span></div>
+<div class="item"><span class="num">868.</span> <span class="lang">Tuvaluan:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">869.</span> <span class="lang">Tuvano:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">870.</span> <span class="lang">Twi:</span> <span class="phrase">Me dɔ wo</span></div>
+<div class="item"><span class="num">871.</span> <span class="lang">Tyap:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">872.</span> <span class="lang">Udmurto:</span> <span class="phrase">Mon toné yarátysku</span></div>
+<div class="item"><span class="num">873.</span> <span class="lang">Ugarítico:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">874.</span> <span class="lang">Uigur:</span> <span class="phrase">Men seni söyimen</span></div>
+<div class="item"><span class="num">875.</span> <span class="lang">Ukraniano:</span> <span class="phrase">Ya tebe kohayu</span></div>
+<div class="item"><span class="num">876.</span> <span class="lang">Ulithiano:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">877.</span> <span class="lang">Umbrío:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">878.</span> <span class="lang">Umbundu:</span> <span class="phrase">Ndi ku sole</span></div>
+<div class="item"><span class="num">879.</span> <span class="lang">Umpila:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">880.</span> <span class="lang">Urdu:</span> <span class="phrase">Main tumse pyar karta hoon</span></div>
+<div class="item"><span class="num">881.</span> <span class="lang">Uro:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">882.</span> <span class="lang">Uzbeko:</span> <span class="phrase">Men seni sevaman</span></div>
+<div class="item"><span class="num">883.</span> <span class="lang">Vai:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">884.</span> <span class="lang">Valón:</span> <span class="phrase">Dji vos veu vol'tî</span></div>
+<div class="item"><span class="num">885.</span> <span class="lang">Venda:</span> <span class="phrase">Ndo ni funa</span></div>
+<div class="item"><span class="num">886.</span> <span class="lang">Veneciano:</span> <span class="phrase">Ti amo</span></div>
+<div class="item"><span class="num">887.</span> <span class="lang">Vepsio:</span> <span class="phrase">Minä armastan sind</span></div>
+<div class="item"><span class="num">888.</span> <span class="lang">Vietnamita:</span> <span class="phrase">Tôi yêu bạn</span></div>
+<div class="item"><span class="num">889.</span> <span class="lang">Vinlandés:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">890.</span> <span class="lang">Visayan:</span> <span class="phrase">Gihigugma ko ikaw</span></div>
+<div class="item"><span class="num">891.</span> <span class="lang">Vocalés:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">892.</span> <span class="lang">Vótico:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">893.</span> <span class="lang">Vozio:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">894.</span> <span class="lang">Wagaya:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">895.</span> <span class="lang">Walamo:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">896.</span> <span class="lang">Walapai:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">897.</span> <span class="lang">Walla Walla:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">898.</span> <span class="lang">Walser:</span> <span class="phrase">Ich liebe dich</span></div>
+<div class="item"><span class="num">899.</span> <span class="lang">Wambaya:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">900.</span> <span class="lang">Wampanoag:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">901.</span> <span class="lang">Warao:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">902.</span> <span class="lang">Waray:</span> <span class="phrase">Hinihigugma ko ikaw</span></div>
+<div class="item"><span class="num">903.</span> <span class="lang">Warlpiri:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">904.</span> <span class="lang">Washo:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">905.</span> <span class="lang">Wayuu:</span> <span class="phrase">Taya püpülee</span></div>
+<div class="item"><span class="num">906.</span> <span class="lang">Welayta:</span> <span class="phrase">Taani ne bolla sissayis</span></div>
+<div class="item"><span class="num">907.</span> <span class="lang">Wichí:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">908.</span> <span class="lang">Wichita:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">909.</span> <span class="lang">Winnebago:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">910.</span> <span class="lang">Wolaytta:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">911.</span> <span class="lang">Wolof:</span> <span class="phrase">Dama la bëgg</span></div>
+<div class="item"><span class="num">912.</span> <span class="lang">Wyandot:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">913.</span> <span class="lang">Xhosa:</span> <span class="phrase">Ndiyakuthanda</span></div>
+<div class="item"><span class="num">914.</span> <span class="lang">Xiang:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">915.</span> <span class="lang">Xibe:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">916.</span> <span class="lang">Xinca:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">917.</span> <span class="lang">Xitsonga:</span> <span class="phrase">Ndza ku rhandza</span></div>
+<div class="item"><span class="num">918.</span> <span class="lang">Yakuto:</span> <span class="phrase">Min eni tapybyyn</span></div>
+<div class="item"><span class="num">919.</span> <span class="lang">Yao:</span> <span class="phrase">Nimbachigwile</span></div>
+<div class="item"><span class="num">920.</span> <span class="lang">Yapese:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">921.</span> <span class="lang">Yavitero:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">922.</span> <span class="lang">Yiddish:</span> <span class="phrase">Ich hob dikh lib</span></div>
+<div class="item"><span class="num">923.</span> <span class="lang">Yin:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">924.</span> <span class="lang">Yipounou:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">925.</span> <span class="lang">Yoruba:</span> <span class="phrase">Mo nifẹẹ rẹ</span></div>
+<div class="item"><span class="num">926.</span> <span class="lang">Yucateco:</span> <span class="phrase">In yaakumech</span></div>
+<div class="item"><span class="num">927.</span> <span class="lang">Yuchi:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">928.</span> <span class="lang">Yue:</span> <span class="phrase">Ngo oi nei</span></div>
+<div class="item"><span class="num">929.</span> <span class="lang">Yugur:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">930.</span> <span class="lang">Yuma:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">931.</span> <span class="lang">Yupik:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">932.</span> <span class="lang">Yurok:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">933.</span> <span class="lang">Zapoteco:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">934.</span> <span class="lang">Zarma:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">935.</span> <span class="lang">Zazaki:</span> <span class="phrase">Ez to ra hes keno</span></div>
+<div class="item"><span class="num">936.</span> <span class="lang">Zenaga:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">937.</span> <span class="lang">Zhuang:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">938.</span> <span class="lang">Zoque:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">939.</span> <span class="lang">Zulú:</span> <span class="phrase">Ngiyakuthanda</span></div>
+<div class="item"><span class="num">940.</span> <span class="lang">Zuñi:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">941.</span> <span class="lang">Aari:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">942.</span> <span class="lang">Abaza:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">943.</span> <span class="lang">Abinomn:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">944.</span> <span class="lang">Acehnés:</span> <span class="phrase">Gom kasih keu gata</span></div>
+<div class="item"><span class="num">945.</span> <span class="lang">Achang:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">946.</span> <span class="lang">Acholi:</span> <span class="phrase">Amini</span></div>
+<div class="item"><span class="num">947.</span> <span class="lang">Ada:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">948.</span> <span class="lang">Adangme:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">949.</span> <span class="lang">Adele:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">950.</span> <span class="lang">Adyghe:</span> <span class="phrase">Sè wè fëlhë</span></div>
+<div class="item"><span class="num">951.</span> <span class="lang">Afar:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">952.</span> <span class="lang">Agul:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">953.</span> <span class="lang">Ahtna:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">954.</span> <span class="lang">Ainu:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">955.</span> <span class="lang">Ajië:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">956.</span> <span class="lang">Akateko:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">957.</span> <span class="lang">Akhvakh:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">958.</span> <span class="lang">Akkadiano:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">959.</span> <span class="lang">Akoose:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">960.</span> <span class="lang">Akuapem:</span> <span class="phrase">Me dɔ wo</span></div>
+<div class="item"><span class="num">961.</span> <span class="lang">Alamblak:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">962.</span> <span class="lang">Aleut:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">963.</span> <span class="lang">Alsea:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">964.</span> <span class="lang">Alutor:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">965.</span> <span class="lang">Amharico:</span> <span class="phrase">Ewudelehu</span></div>
+<div class="item"><span class="num">966.</span> <span class="lang">Amis:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">967.</span> <span class="lang">Anaang:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">968.</span> <span class="lang">Andi:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">969.</span> <span class="lang">Angika:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">970.</span> <span class="lang">Angloromani:</span> <span class="phrase">Te amo</span></div>
+<div class="num">971.</span> <span class="lang">Anuta:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">972.</span> <span class="lang">Ao:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">973.</span> <span class="lang">Apatani:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">974.</span> <span class="lang">Apinayé:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">975.</span> <span class="lang">Apurinã:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">976.</span> <span class="lang">Arabana:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">977.</span> <span class="lang">Arapaho:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">978.</span> <span class="lang">Arawak:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">979.</span> <span class="lang">Archi:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">980.</span> <span class="lang">Arin:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">981.</span> <span class="lang">Armenio:</span> <span class="phrase">Yes kez sirum em</span></div>
+<div class="item"><span class="num">982.</span> <span class="lang">Aromuniano:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">983.</span> <span class="lang">Arosi:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">984.</span> <span class="lang">Arpitan:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">985.</span> <span class="lang">Arrernte:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">986.</span> <span class="lang">Arvanitika:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">987.</span> <span class="lang">Asaro:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">988.</span> <span class="lang">Asháninka:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">989.</span> <span class="lang">Assiniboine:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">990.</span> <span class="lang">Assirio:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">991.</span> <span class="lang">Asturiano:</span> <span class="phrase">Quiérote</span></div>
+<div class="item"><span class="num">992.</span> <span class="lang">Atayal:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">993.</span> <span class="lang">Athabascano:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">994.</span> <span class="lang">Ati:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">995.</span> <span class="lang">Atsam:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">996.</span> <span class="lang">Atsugewi:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">997.</span> <span class="lang">Attié:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">998.</span> <span class="lang">Avar:</span> <span class="phrase">Duna duna</span></div>
+<div class="item"><span class="num">999.</span> <span class="lang">Awabakal:</span> <span class="phrase">Te amo</span></div>
+<div class="item"><span class="num">1000.</span> <span class="lang">Aymara:</span> <span class="phrase">Munsma</span></div>
+        
+<!-- ... resto de los items ... -->
+    </div>
+
+
+    <div class="footer">
+        "El nuestro:Te amo de la forma en la que solo nosotros sabemos hacerlo."
+    </div>
+</div>
+</head>
+        </div>
+    </div>
+
+
+<!-- El botón y donde aparecerá el resultado -->
+<div style="text-align: center; margin: 20px;">
+    <button onclick="mostrarMensaje()" style="background:#7eecda; border:none; padding:12px 25px; border-radius:25px; cursor:pointer; font-weight:bold; color:#000;">
+        ¿Qué te quiero decir hoy?
+    </button>
+    <div id="resultado" style="margin-top:25px; font-size:1.3em; color:#fff; min-height: 50px;">
+        <em>Presiona el botón para una sorpresa...</em>
+    </div>
+</div>
+
+
+<script>
+
+
+
+
+
+
+    // Tus 50 frases bonitas personalizadas
+    const frasesBonitas = [
+        "Eres mi lugar seguro en el mundo.",
+        "Gracias por ser mi apoyo incondicional.",
+        "No imagino mis días sin tu sonrisa.",
+        "Te amo más de lo que las palabras pueden expresar.",
+        "Eres la mejor casualidad que me ha pasado.",
+        "Contigo todo es más bonito.",
+        "Me encanta cómo me haces sentir cuando estamos juntos.",
+        "Eres mi sol en los días nublados.",
+        "Gracias por caminar a mi lado.",
+        "Mi lugar favorito es donde tú estés.",
+        "Eres mi persona favorita en todo el universo.",
+        "Contigo he aprendido lo que realmente significa amar.",
+        "Tu felicidad es mi prioridad.",
+        "Eres mi refugio y mi paz.",
+        "Gracias por ser tú, tal cual eres.",
+        "Adoro cada momento que paso a tu lado.",
+        "Eres el regalo más bonito que la vida me dio.",
+        "Tu amor hace que todo valga la pena.",
+        "Eres mi hogar y mi aventura al mismo tiempo.",
+        "Gracias por hacerme tan feliz cada día.",
+        "Contigo el tiempo se detiene.",
+        "Eres mi inspiración constante.",
+        "Amor es lo que siento cada vez que te veo.",
+        "Me haces sonreír incluso sin intentarlo.",
+        "Eres mi primer pensamiento al despertar.",
+        "Tu corazón es mi tesoro más grande.",
+        "Eres la pieza que le faltaba a mi rompecabezas.",
+        "Gracias por construir momentos conmigo.",
+        "Eres mi sueño hecho realidad.",
+        "Contigo, cada día es una nueva oportunidad para ser feliz.",
+        "Tu amor es mi mayor fuerza.",
+        "Eres mi compañía perfecta.",
+        "Me encantas, hoy y siempre.",
+        "No hace falta decir mucho, contigo lo siento todo.",
+        "Eres mi mejor cómplice.",
+        "Gracias por creer en nosotros.",
+        "Cada vez que te veo, mi mundo brilla más.",
+        "Eres mi mayor orgullo.",
+        "Es un honor tenerte en mi vida.",
+        "Eres mi calma en medio de la tormenta.",
+        "Gracias por ser mi mejor amigo y mi amor.",
+        "Si volviera a nacer, te buscaría otra vez.",
+        "Eres mi luz en la oscuridad.",
+        "Tus abrazos son mi medicina.",
+        "Nunca dejes de ser tú, te amo así.",
+        "Eres mi todo.",
+        "Gracias por los días de risas y los de apoyo.",
+        "Contigo todo es mejor.",
+        "Eres el capítulo más hermoso de mi vida.",
+        "Te elijo hoy y te elegiría todos los días."
+    ];
+
+
+    function mostrarMensaje() {
+        // Decide si mostrar un idioma o una frase bonita (50/50 de probabilidad)
+        const tipo = Math.random() > 0.5;
+        
+        if (tipo) {
+            const item = idiomas[Math.floor(Math.random() * idiomas.length)];
+            document.getElementById("resultado").innerHTML = 
+                `<strong>${item.lang}:</strong> <em>"${item.phrase}"</em>`;
+        } else {
+            const frase = frasesBonitas[Math.floor(Math.random() * frasesBonitas.length)];
+            document.getElementById("resultado").innerHTML = 
+                `<em>"${frase}"</em>`;
+        }
+    }
+</script>
+
+
+</body>
+</html>
